@@ -124,8 +124,8 @@ def poke_id2detail(id):
     url = "https://raw.githubusercontent.com/giginet/pokedex/master/dex/dex{0}.json".format(id)
     r = requests.get(url)
     return {
-        image_url: "http://www.serebii.net/pokemongo/pokemon/{0:03d}.png".format(id),
-        name: r.json()['name']
+        'image_url': "http://www.serebii.net/pokemongo/pokemon/{0:03d}.png".format(id),
+        'name': r.json()['name']
     }
 
 def main():
