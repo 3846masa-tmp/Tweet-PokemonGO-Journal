@@ -17,7 +17,7 @@ Tweet PokemonGO Journal powered by pgoapi https://github.com/tejado/pgoapi.
 Build and run container:
 
     docker build -t tweet_pokego .
-    docker run --rm --restart always -e TZ="Asia/Tokyo" -v ${PWD}/config.json:/config.json tweet_pokego
+    docker run --restart always -e TZ="Asia/Tokyo" -v ${PWD}/config.json:/usr/src/app/config.json tweet_pokego
 
 ## Requirements
  * Python 3
