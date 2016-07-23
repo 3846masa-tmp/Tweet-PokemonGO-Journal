@@ -171,7 +171,6 @@ def main():
         newest_response = [el for el in response if el['timestamp_ms'] > latest_timestamp_ms]
         for el in newest_response:
             text = ''
-            os.environ['TZ'] = 'Asia/Tokyo'
             time.tzset()
             timestamp = time.strftime("%Y/%m/%d %X", time.localtime(el['timestamp_ms']/ 1000))
             if 'fort_search' in el:
