@@ -186,8 +186,12 @@ def main():
                 with open(temp_filename, 'wb') as image:
                     for chunk in res:
                         image.write(chunk)
-                text = "{0} (CP: {1}) を捕まえた！\n({2})".format(
-                    poke_detail['name'], poke_info['combat_points'], timestamp)
+                if (poke_info['result'] == 1):
+                    text = "{0} (CP: {1}) を捕まえた！\n({2})".format(
+                        poke_detail['name'], poke_info['combat_points'], timestamp)
+                elif (poke_info['result'] == 2):
+                    text = "{0} (CP: {1}) に逃げられた...\n({2})".format(
+                        poke_detail['name'], poke_info['combat_points'], timestamp)
                 twitter.update_with_media(temp_filename, status=text)
                 os.remove(temp_filename)
         # print('Response dictionary: \n\r{}'.format(pprint.PrettyPrinter(indent=4).pformat(newest_response)))
