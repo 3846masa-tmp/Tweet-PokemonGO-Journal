@@ -35,6 +35,7 @@ import logging
 import requests
 import argparse
 import getpass
+import tweepy
 
 # add directory of this file to PATH, so that the package will be found
 sys.path.append(os.path.dirname(os.path.realpath(__file__)))
@@ -105,8 +106,9 @@ def init_config():
 
     # Passed in arguments shoud trump
     for key in config.__dict__:
-        if key in load and config.__dict__[key] == None:
+        if  key in load and config.__dict__[key] == None:
             config.__dict__[key] = str(load[key])
+    config.__dict__['twitter'] = load['twitter']
 
     if config.__dict__["password"] is None:
         log.info("Secure Password Input (if there is no password prompt, use --password <pw>):")
@@ -118,6 +120,10 @@ def init_config():
 
     return config
 
+def poke_id2detail(id):
+    url = "https://raw.githubusercontent.com/giginet/pokedex/master/dex/dex{0}.json".format(id)
+    r = requests.get(url)
+    return r.json()
 
 def main():
     # log settings
@@ -143,6 +149,11 @@ def main():
     if config.test:
         return
 
+    # Twitter
+    twitter_auth = tweepy.OAuthHandler(config.twitter['consumer_key'], config.twitter['consumer_secret'])
+    twitter_auth.set_access_token(config.twitter['access_token'], config.twitter['access_token_secret'])
+    twitter = tweepy.API(twitter_auth)
+
     # instantiate pgoapi
     api = pgoapi.PGoApi()
 
@@ -152,48 +163,37 @@ def main():
     if not api.login(config.auth_service, config.username, config.password):
         return
 
-    # chain subrequests (methods) into one RPC call
-
-    # get player profile call
-    # ----------------------
-    api.get_player()
-
-    # get inventory call
-    # ----------------------
-    api.get_inventory()
-
-    # get map objects call
-    # repeated fields (e.g. cell_id and since_timestamp_ms in get_map_objects) can be provided over a list
-    # ----------------------
-    #cell_ids = get_cell_ids(position[0], position[1])
-    #timestamps = [0,] * len(cell_ids)
-    #api.get_map_objects(latitude = util.f2i(position[0]), longitude = util.f2i(position[1]), since_timestamp_ms = timestamps, cell_id = cell_ids)
-
-    # spin a fort
-    # ----------------------
-    #fortid = '<your fortid>'
-    #lng = <your longitude>
-    #lat = <your latitude>
-    #api.fort_search(fort_id=fortid, fort_latitude=lat, fort_longitude=lng, player_latitude=f2i(position[0]), player_longitude=f2i(position[1]))
-
-    # release/transfer a pokemon and get candy for it
-    # ----------------------
-    #api.release_pokemon(pokemon_id = <your pokemonid>)
-
-    # evolve a pokemon if you have enough candies
-    # ----------------------
-    #api.evolve_pokemon(pokemon_id = <your pokemonid>)
-
-    # get download settings call
-    # ----------------------
-    #api.download_settings(hash="05daf51635c82611d1aac95c0b051d3ec088a930")
-
-    # execute the RPC call
-    response_dict = api.call()
-    print('Response dictionary: \n\r{}'.format(pprint.PrettyPrinter(indent=4).pformat(response_dict)))
-
-    # alternative:
-    # api.get_player().get_inventory().get_map_objects().download_settings(hash="05daf51635c82611d1aac95c0b051d3ec088a930").call()
+    latest_timestamp_ms = int(time.time() * 1000)
+    while True:
+        # execute the RPC call
+        response_dict = api.sfida_action_log().call()
+        response = response_dict['responses']['SFIDA_ACTION_LOG']['log_entries']
+        newest_response = [el for el in response if el['timestamp_ms'] > latest_timestamp_ms]
+        for el in newest_response:
+            text = ''
+            os.environ['TZ'] = 'Asia/Tokyo'
+            time.tzset()
+            timestamp = time.strftime("%Y/%m/%d %X", time.localtime(el['timestamp_ms']/ 1000))
+            if 'fort_search' in el:
+                items_info = el['fort_search']
+                items_count = sum([items['count'] for items in items_info['items']])
+                text = "ポケストップで {0} 個手に入れた！\n({1})".format(items_count, timestamp)
+                twitter.update_status(text)
+            elif 'catch_pokemon' in el:
+                poke_info = el['catch_pokemon']
+                poke_detail = poke_id2detail(poke_info['pokemon_id'])
+                temp_filename = '{0}.png'.format(time)
+                res = requests.get(poke_detail['image_url'], stream=True)
+                with open(temp_filename, 'wb') as image:
+                    for chunk in res:
+                        image.write(chunk)
+                text = "{0} (CP: {1}) を捕まえた！\n({2})".format(
+                    poke_detail['name'], poke_info['combat_points'], timestamp)
+                twitter.update_with_media(temp_filename, status=text)
+                os.remove(temp_filename)
+        # print('Response dictionary: \n\r{}'.format(pprint.PrettyPrinter(indent=4).pformat(newest_response)))
+        latest_timestamp_ms = max([el['timestamp_ms'] for el in response])
+        time.sleep(30)
 
 if __name__ == '__main__':
     main()

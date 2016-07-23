@@ -13,57 +13,847 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-from POGOProtos import Inventory_pb2 as POGOProtos_dot_Inventory__pb2
-POGOProtos_dot_Data__pb2 = POGOProtos_dot_Inventory__pb2.POGOProtos_dot_Data__pb2
-POGOProtos_dot_Enums__pb2 = POGOProtos_dot_Inventory__pb2.POGOProtos_dot_Enums__pb2
-POGOProtos_dot_Data_dot_Player__pb2 = POGOProtos_dot_Inventory__pb2.POGOProtos_dot_Data_dot_Player__pb2
-POGOProtos_dot_Enums__pb2 = POGOProtos_dot_Inventory__pb2.POGOProtos_dot_Enums__pb2
-POGOProtos_dot_Data_dot_Player__pb2 = POGOProtos_dot_Inventory__pb2.POGOProtos_dot_Data_dot_Player__pb2
-POGOProtos_dot_Enums__pb2 = POGOProtos_dot_Inventory__pb2.POGOProtos_dot_Enums__pb2
-POGOProtos_dot_Enums__pb2 = POGOProtos_dot_Inventory__pb2.POGOProtos_dot_Enums__pb2
-from POGOProtos.Data import Battle_pb2 as POGOProtos_dot_Data_dot_Battle__pb2
-POGOProtos_dot_Data_dot_Player__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Data_dot_Player__pb2
-POGOProtos_dot_Enums__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Enums__pb2
-POGOProtos_dot_Data__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Data__pb2
-POGOProtos_dot_Enums__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Enums__pb2
-POGOProtos_dot_Data_dot_Player__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Data_dot_Player__pb2
-POGOProtos_dot_Enums__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Enums__pb2
-POGOProtos_dot_Data_dot_Gym__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Data_dot_Gym__pb2
-POGOProtos_dot_Data__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Data__pb2
-POGOProtos_dot_Enums__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Enums__pb2
-POGOProtos_dot_Data_dot_Player__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Data_dot_Player__pb2
-POGOProtos_dot_Enums__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Enums__pb2
-POGOProtos_dot_Data_dot_Player__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Data_dot_Player__pb2
-POGOProtos_dot_Enums__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Enums__pb2
-POGOProtos_dot_Map_dot_Fort__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Map_dot_Fort__pb2
-POGOProtos_dot_Enums__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Enums__pb2
-POGOProtos_dot_Inventory__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Inventory__pb2
-POGOProtos_dot_Data__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Data__pb2
-POGOProtos_dot_Enums__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Enums__pb2
-POGOProtos_dot_Data_dot_Player__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Data_dot_Player__pb2
-POGOProtos_dot_Enums__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Enums__pb2
-POGOProtos_dot_Data_dot_Player__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Data_dot_Player__pb2
-POGOProtos_dot_Enums__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Enums__pb2
-POGOProtos_dot_Enums__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Enums__pb2
+from POGOProtos.Inventory import Item_pb2 as POGOProtos_dot_Inventory_dot_Item__pb2
 from POGOProtos import Enums_pb2 as POGOProtos_dot_Enums__pb2
 from POGOProtos.Data import Player_pb2 as POGOProtos_dot_Data_dot_Player__pb2
 POGOProtos_dot_Enums__pb2 = POGOProtos_dot_Data_dot_Player__pb2.POGOProtos_dot_Enums__pb2
+from POGOProtos.Data import Battle_pb2 as POGOProtos_dot_Data_dot_Battle__pb2
+POGOProtos_dot_Data__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Data__pb2
+POGOProtos_dot_Enums__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Enums__pb2
+POGOProtos_dot_Data_dot_Player__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Data_dot_Player__pb2
+POGOProtos_dot_Enums__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Enums__pb2
+POGOProtos_dot_Inventory_dot_Item__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Inventory_dot_Item__pb2
+POGOProtos_dot_Data_dot_Gym__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Data_dot_Gym__pb2
+POGOProtos_dot_Map_dot_Fort__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Map_dot_Fort__pb2
+POGOProtos_dot_Enums__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Enums__pb2
+POGOProtos_dot_Inventory_dot_Item__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Inventory_dot_Item__pb2
+POGOProtos_dot_Data__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Data__pb2
+POGOProtos_dot_Enums__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Enums__pb2
+POGOProtos_dot_Data_dot_Player__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Data_dot_Player__pb2
+POGOProtos_dot_Enums__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Enums__pb2
+POGOProtos_dot_Inventory_dot_Item__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Inventory_dot_Item__pb2
+POGOProtos_dot_Data_dot_Player__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Data_dot_Player__pb2
+POGOProtos_dot_Enums__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Enums__pb2
+POGOProtos_dot_Data_dot_Player__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Data_dot_Player__pb2
+POGOProtos_dot_Enums__pb2 = POGOProtos_dot_Data_dot_Battle__pb2.POGOProtos_dot_Enums__pb2
 
-from POGOProtos.Inventory_pb2 import *
-from POGOProtos.Data.Battle_pb2 import *
+from POGOProtos.Inventory.Item_pb2 import *
 from POGOProtos.Enums_pb2 import *
 from POGOProtos.Data.Player_pb2 import *
+from POGOProtos.Data.Battle_pb2 import *
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='POGOProtos.Networking.Requests.Messages.proto',
   package='POGOProtos.Networking.Requests.Messages',
   syntax='proto3',
-  serialized_pb=_b('\n-POGOProtos.Networking.Requests.Messages.proto\x12\'POGOProtos.Networking.Requests.Messages\x1a\x1aPOGOProtos.Inventory.proto\x1a\x1cPOGOProtos.Data.Battle.proto\x1a\x16POGOProtos.Enums.proto\x1a\x1cPOGOProtos.Data.Player.proto\"\x91\x01\n\x16\x41\x64\x64\x46ortModifierMessage\x12\x33\n\rmodifier_type\x18\x01 \x01(\x0e\x32\x1c.POGOProtos.Inventory.ItemId\x12\x0f\n\x07\x66ort_id\x18\x02 \x01(\t\x12\x17\n\x0fplayer_latitude\x18\x03 \x01(\x01\x12\x18\n\x10player_longitude\x18\x04 \x01(\x01\"\xec\x01\n\x10\x41ttackGymMessage\x12\x0e\n\x06gym_id\x18\x01 \x01(\t\x12\x11\n\tbattle_id\x18\x02 \x01(\t\x12<\n\x0e\x61ttack_actions\x18\x03 \x03(\x0b\x32$.POGOProtos.Data.Battle.BattleAction\x12\x44\n\x16last_retrieved_actions\x18\x04 \x01(\x0b\x32$.POGOProtos.Data.Battle.BattleAction\x12\x17\n\x0fplayer_latitude\x18\x05 \x01(\x01\x12\x18\n\x10player_longitude\x18\x06 \x01(\x01\"\xc3\x01\n\x13\x43\x61tchPokemonMessage\x12\x14\n\x0c\x65ncounter_id\x18\x01 \x01(\x06\x12\x10\n\x08pokeball\x18\x02 \x01(\x05\x12\x1f\n\x17normalized_reticle_size\x18\x03 \x01(\x01\x12\x18\n\x10spawn_point_guid\x18\x04 \x01(\t\x12\x13\n\x0bhit_pokemon\x18\x05 \x01(\x08\x12\x15\n\rspin_modifier\x18\x06 \x01(\x01\x12\x1d\n\x15NormalizedHitPosition\x18\x07 \x01(\x01\"\x1b\n\x19\x43heckAwardedBadgesMessage\"1\n\x1d\x43heckCodenameAvailableMessage\x12\x10\n\x08\x63odename\x18\x01 \x01(\t\"(\n\x14\x43laimCodenameMessage\x12\x10\n\x08\x63odename\x18\x01 \x01(\t\"\x1a\n\x18\x43ollectDailyBonusMessage\"\"\n CollectDailyDefenderBonusMessage\"p\n\x14\x44iskEncounterMessage\x12\x14\n\x0c\x65ncounter_id\x18\x01 \x01(\x06\x12\x0f\n\x07\x66ort_id\x18\x02 \x01(\t\x12\x17\n\x0fplayer_latitude\x18\x03 \x01(\x01\x12\x18\n\x10player_longitude\x18\x04 \x01(\x01\"\x1e\n\x1c\x44ownloadItemTemplatesMessage\"\xaa\x01\n\"DownloadRemoteConfigVersionMessage\x12,\n\x08platform\x18\x01 \x01(\x0e\x32\x1a.POGOProtos.Enums.Platform\x12\x1b\n\x13\x64\x65vice_manufacturer\x18\x02 \x01(\t\x12\x14\n\x0c\x64\x65vice_model\x18\x03 \x01(\t\x12\x0e\n\x06locale\x18\x04 \x01(\t\x12\x13\n\x0b\x61pp_version\x18\x05 \x01(\r\"\'\n\x17\x44ownloadSettingsMessage\x12\x0c\n\x04hash\x18\x01 \x01(\t\"\r\n\x0b\x45\x63hoMessage\"r\n\x10\x45ncounterMessage\x12\x14\n\x0c\x65ncounter_id\x18\x01 \x01(\x06\x12\x15\n\rspawnpoint_id\x18\x02 \x01(\t\x12\x17\n\x0fplayer_latitude\x18\x03 \x01(\x01\x12\x18\n\x10player_longitude\x18\x04 \x01(\x01\"S\n EncounterTutorialCompleteMessage\x12/\n\npokemon_id\x18\x01 \x01(\x0e\x32\x1b.POGOProtos.Enums.PokemonId\"D\n\x11\x45quipBadgeMessage\x12/\n\nbadge_type\x18\x01 \x01(\x0e\x32\x1b.POGOProtos.Enums.BadgeType\"*\n\x14\x45volvePokemonMessage\x12\x12\n\npokemon_id\x18\x01 \x01(\x06\"i\n\x0f\x46ortDeployProto\x12\x0f\n\x07\x66ort_id\x18\x01 \x01(\t\x12\x12\n\npokemon_id\x18\x02 \x01(\x04\x12\x17\n\x0fplayer_latitude\x18\x03 \x01(\x01\x12\x18\n\x10player_longitude\x18\x04 \x01(\x01\"J\n\x12\x46ortDetailsMessage\x12\x0f\n\x07\x66ort_id\x18\x01 \x01(\t\x12\x10\n\x08latitude\x18\x02 \x01(\x01\x12\x11\n\tlongitude\x18\x03 \x01(\x01\"r\n\x18\x46ortRecallPokemonMessage\x12\x0f\n\x07\x66ort_id\x18\x01 \x01(\t\x12\x12\n\npokemon_id\x18\x02 \x01(\x04\x12\x17\n\x0fplayer_latitude\x18\x03 \x01(\x01\x12\x18\n\x10player_longitude\x18\x04 \x01(\x01\"\x86\x01\n\x11\x46ortSearchMessage\x12\x0f\n\x07\x66ort_id\x18\x01 \x01(\t\x12\x17\n\x0fplayer_latitude\x18\x02 \x01(\x01\x12\x18\n\x10player_longitude\x18\x03 \x01(\x01\x12\x15\n\rfort_latitude\x18\x04 \x01(\x01\x12\x16\n\x0e\x66ort_longitude\x18\x05 \x01(\x01\"\x9d\x01\n\x15GetAssetDigestMessage\x12,\n\x08platform\x18\x01 \x01(\x0e\x32\x1a.POGOProtos.Enums.Platform\x12\x1b\n\x13\x64\x65vice_manufacturer\x18\x02 \x01(\t\x12\x14\n\x0c\x64\x65vice_model\x18\x03 \x01(\t\x12\x0e\n\x06locale\x18\x04 \x01(\t\x12\x13\n\x0b\x61pp_version\x18\x05 \x01(\r\"*\n\x16GetDownloadUrlsMessage\x12\x10\n\x08\x61sset_id\x18\x01 \x03(\t\"\x86\x01\n\x14GetGymDetailsMessage\x12\x0e\n\x06gym_id\x18\x01 \x01(\t\x12\x17\n\x0fplayer_latitude\x18\x02 \x01(\x01\x12\x18\n\x10player_longitude\x18\x03 \x01(\x01\x12\x14\n\x0cgym_latitude\x18\x04 \x01(\x01\x12\x15\n\rgym_longitude\x18\x05 \x01(\x01\"\x17\n\x15GetHatchedEggsMessage\"M\n\x18GetIncensePokemonMessage\x12\x17\n\x0fplayer_latitude\x18\x01 \x01(\x01\x12\x18\n\x10player_longitude\x18\x02 \x01(\x01\"H\n\x13GetInventoryMessage\x12\x19\n\x11last_timestamp_ms\x18\x01 \x01(\x03\x12\x16\n\x0eitem_been_seen\x18\x02 \x01(\x05\"p\n\x14GetMapObjectsMessage\x12\x13\n\x07\x63\x65ll_id\x18\x01 \x03(\x04\x42\x02\x10\x01\x12\x1e\n\x12since_timestamp_ms\x18\x02 \x03(\x03\x42\x02\x10\x01\x12\x10\n\x08latitude\x18\x03 \x01(\x01\x12\x11\n\tlongitude\x18\x04 \x01(\x01\"\x12\n\x10GetPlayerMessage\".\n\x17GetPlayerProfileMessage\x12\x13\n\x0bplayer_name\x18\x01 \x01(\t\"\x1e\n\x1cGetSuggestedCodenamesMessage\"K\n\x17IncenseEncounterMessage\x12\x14\n\x0c\x65ncounter_id\x18\x01 \x01(\x03\x12\x1a\n\x12\x65ncounter_location\x18\x02 \x01(\t\"&\n\x15LevelUpRewardsMessage\x12\r\n\x05level\x18\x01 \x01(\x05\">\n\x16NicknamePokemonMessage\x12\x12\n\npokemon_id\x18\x01 \x01(\x04\x12\x10\n\x08nickname\x18\x02 \x01(\t\":\n\x13PlayerUpdateMessage\x12\x10\n\x08latitude\x18\x01 \x01(\x01\x12\x11\n\tlongitude\x18\x02 \x01(\x01\"[\n\x1bRecycleInventoryItemMessage\x12-\n\x07item_id\x18\x01 \x01(\x0e\x32\x1c.POGOProtos.Inventory.ItemId\x12\r\n\x05\x63ount\x18\x02 \x01(\x05\"+\n\x15ReleasePokemonMessage\x12\x12\n\npokemon_id\x18\x01 \x01(\x06\"O\n\x10SetAvatarMessage\x12;\n\rplayer_avatar\x18\x02 \x01(\x0b\x32$.POGOProtos.Data.Player.PlayerAvatar\"^\n\x19SetContactSettingsMessage\x12\x41\n\x10\x63ontact_settings\x18\x01 \x01(\x0b\x32\'.POGOProtos.Data.Player.ContactSettings\"D\n\x19SetFavoritePokemonMessage\x12\x12\n\npokemon_id\x18\x01 \x01(\x04\x12\x13\n\x0bis_favorite\x18\x02 \x01(\x08\"A\n\x14SetPlayerTeamMessage\x12)\n\x04team\x18\x01 \x01(\x0e\x32\x1b.POGOProtos.Enums.TeamColor\"\x97\x01\n\x15StartGymBattleMessage\x12\x0e\n\x06gym_id\x18\x01 \x01(\t\x12\x1d\n\x15\x61ttacking_pokemon_ids\x18\x02 \x03(\x04\x12\x1c\n\x14\x64\x65\x66\x65nding_pokemon_id\x18\x03 \x01(\x04\x12\x17\n\x0fplayer_latitude\x18\x04 \x01(\x01\x12\x18\n\x10player_longitude\x18\x05 \x01(\x01\"+\n\x15UpgradePokemonMessage\x12\x12\n\npokemon_id\x18\x01 \x01(\x04\"G\n\x11UseIncenseMessage\x12\x32\n\x0cincense_type\x18\x01 \x01(\x0e\x32\x1c.POGOProtos.Inventory.ItemId\"v\n\x15UseItemCaptureMessage\x12-\n\x07item_id\x18\x01 \x01(\x0e\x32\x1c.POGOProtos.Inventory.ItemId\x12\x14\n\x0c\x65ncounter_id\x18\x02 \x01(\x06\x12\x18\n\x10spawn_point_guid\x18\x03 \x01(\t\"A\n\x1aUseItemEggIncubatorMessage\x12\x0f\n\x07item_id\x18\x01 \x01(\t\x12\x12\n\npokemon_id\x18\x02 \x01(\x04\"\x85\x01\n\x11UseItemGymMessage\x12-\n\x07item_id\x18\x01 \x01(\x0e\x32\x1c.POGOProtos.Inventory.ItemId\x12\x0e\n\x06gym_id\x18\x02 \x01(\t\x12\x17\n\x0fplayer_latitude\x18\x03 \x01(\x01\x12\x18\n\x10player_longitude\x18\x04 \x01(\x01\"Y\n\x14UseItemPotionMessage\x12-\n\x07item_id\x18\x01 \x01(\x0e\x32\x1c.POGOProtos.Inventory.ItemId\x12\x12\n\npokemon_id\x18\x02 \x01(\x04\"Y\n\x14UseItemReviveMessage\x12-\n\x07item_id\x18\x01 \x01(\x0e\x32\x1c.POGOProtos.Inventory.ItemId\x12\x12\n\npokemon_id\x18\x02 \x01(\x04\"F\n\x15UseItemXpBoostMessage\x12-\n\x07item_id\x18\x01 \x01(\x0e\x32\x1c.POGOProtos.Inventory.ItemIdP\x00P\x01P\x02P\x03\x62\x06proto3')
+  serialized_pb=_b('\n-POGOProtos.Networking.Requests.Messages.proto\x12\'POGOProtos.Networking.Requests.Messages\x1a\x1fPOGOProtos.Inventory.Item.proto\x1a\x16POGOProtos.Enums.proto\x1a\x1cPOGOProtos.Data.Player.proto\x1a\x1cPOGOProtos.Data.Battle.proto\"\x97\x01\n\x15StartGymBattleMessage\x12\x0e\n\x06gym_id\x18\x01 \x01(\t\x12\x1d\n\x15\x61ttacking_pokemon_ids\x18\x02 \x03(\x06\x12\x1c\n\x14\x64\x65\x66\x65nding_pokemon_id\x18\x03 \x01(\x04\x12\x17\n\x0fplayer_latitude\x18\x04 \x01(\x01\x12\x18\n\x10player_longitude\x18\x05 \x01(\x01\"\x1a\n\x18\x43ollectDailyBonusMessage\">\n\x16NicknamePokemonMessage\x12\x12\n\npokemon_id\x18\x01 \x01(\x06\x12\x10\n\x08nickname\x18\x02 \x01(\t\"\x1e\n\x1cGetSuggestedCodenamesMessage\"`\n\x1bRecycleInventoryItemMessage\x12\x32\n\x07item_id\x18\x01 \x01(\x0e\x32!.POGOProtos.Inventory.Item.ItemId\x12\r\n\x05\x63ount\x18\x02 \x01(\x05\"\x1b\n\x19\x43heckAwardedBadgesMessage\"&\n\x15LevelUpRewardsMessage\x12\r\n\x05level\x18\x01 \x01(\x05\"\xe8\x01\n\x13\x43\x61tchPokemonMessage\x12\x14\n\x0c\x65ncounter_id\x18\x01 \x01(\x06\x12\x33\n\x08pokeball\x18\x02 \x01(\x0e\x32!.POGOProtos.Inventory.Item.ItemId\x12\x1f\n\x17normalized_reticle_size\x18\x03 \x01(\x01\x12\x18\n\x10spawn_point_guid\x18\x04 \x01(\t\x12\x13\n\x0bhit_pokemon\x18\x05 \x01(\x08\x12\x15\n\rspin_modifier\x18\x06 \x01(\x01\x12\x1f\n\x17normalized_hit_position\x18\x07 \x01(\x01\"+\n\x15UpgradePokemonMessage\x12\x12\n\npokemon_id\x18\x01 \x01(\x04\"S\n EncounterTutorialCompleteMessage\x12/\n\npokemon_id\x18\x01 \x01(\x0e\x32\x1b.POGOProtos.Enums.PokemonId\"\xaa\x01\n\"DownloadRemoteConfigVersionMessage\x12,\n\x08platform\x18\x01 \x01(\x0e\x32\x1a.POGOProtos.Enums.Platform\x12\x1b\n\x13\x64\x65vice_manufacturer\x18\x02 \x01(\t\x12\x14\n\x0c\x64\x65vice_model\x18\x03 \x01(\t\x12\x0e\n\x06locale\x18\x04 \x01(\t\x12\x13\n\x0b\x61pp_version\x18\x05 \x01(\r\"^\n\x14UseItemReviveMessage\x12\x32\n\x07item_id\x18\x01 \x01(\x0e\x32!.POGOProtos.Inventory.Item.ItemId\x12\x12\n\npokemon_id\x18\x02 \x01(\x04\"J\n\x12\x46ortDetailsMessage\x12\x0f\n\x07\x66ort_id\x18\x01 \x01(\t\x12\x10\n\x08latitude\x18\x02 \x01(\x01\x12\x11\n\tlongitude\x18\x03 \x01(\x01\"\x86\x01\n\x11\x46ortSearchMessage\x12\x0f\n\x07\x66ort_id\x18\x01 \x01(\t\x12\x17\n\x0fplayer_latitude\x18\x02 \x01(\x01\x12\x18\n\x10player_longitude\x18\x03 \x01(\x01\x12\x15\n\rfort_latitude\x18\x04 \x01(\x01\x12\x16\n\x0e\x66ort_longitude\x18\x05 \x01(\x01\"\x8a\x01\n\x11UseItemGymMessage\x12\x32\n\x07item_id\x18\x01 \x01(\x0e\x32!.POGOProtos.Inventory.Item.ItemId\x12\x0e\n\x06gym_id\x18\x02 \x01(\t\x12\x17\n\x0fplayer_latitude\x18\x03 \x01(\x01\x12\x18\n\x10player_longitude\x18\x04 \x01(\x01\"H\n\x13GetInventoryMessage\x12\x19\n\x11last_timestamp_ms\x18\x01 \x01(\x03\x12\x16\n\x0eitem_been_seen\x18\x02 \x01(\x05\"+\n\x15ReleasePokemonMessage\x12\x12\n\npokemon_id\x18\x01 \x01(\x06\"\x17\n\x15SfidaActionLogMessage\"r\n\x18\x46ortDeployPokemonMessage\x12\x0f\n\x07\x66ort_id\x18\x01 \x01(\t\x12\x12\n\npokemon_id\x18\x02 \x01(\x04\x12\x17\n\x0fplayer_latitude\x18\x03 \x01(\x01\x12\x18\n\x10player_longitude\x18\x04 \x01(\x01\"*\n\x16GetDownloadUrlsMessage\x12\x10\n\x08\x61sset_id\x18\x01 \x03(\t\"\x96\x01\n\x16\x41\x64\x64\x46ortModifierMessage\x12\x38\n\rmodifier_type\x18\x01 \x01(\x0e\x32!.POGOProtos.Inventory.Item.ItemId\x12\x0f\n\x07\x66ort_id\x18\x02 \x01(\t\x12\x17\n\x0fplayer_latitude\x18\x03 \x01(\x01\x12\x18\n\x10player_longitude\x18\x04 \x01(\x01\"*\n\x14\x45volvePokemonMessage\x12\x12\n\npokemon_id\x18\x01 \x01(\x06\"\x1e\n\x1c\x44ownloadItemTemplatesMessage\"s\n\x10\x45ncounterMessage\x12\x14\n\x0c\x65ncounter_id\x18\x01 \x01(\x06\x12\x16\n\x0espawn_point_id\x18\x02 \x01(\t\x12\x17\n\x0fplayer_latitude\x18\x03 \x01(\x01\x12\x18\n\x10player_longitude\x18\x04 \x01(\x01\":\n\x13PlayerUpdateMessage\x12\x10\n\x08latitude\x18\x01 \x01(\x01\x12\x11\n\tlongitude\x18\x02 \x01(\x01\"D\n\x11\x45quipBadgeMessage\x12/\n\nbadge_type\x18\x01 \x01(\x0e\x32\x1b.POGOProtos.Enums.BadgeType\"1\n\x1d\x43heckCodenameAvailableMessage\x12\x10\n\x08\x63odename\x18\x01 \x01(\t\"A\n\x1aUseItemEggIncubatorMessage\x12\x0f\n\x07item_id\x18\x01 \x01(\t\x12\x12\n\npokemon_id\x18\x02 \x01(\x04\"L\n\x11UseIncenseMessage\x12\x37\n\x0cincense_type\x18\x01 \x01(\x0e\x32!.POGOProtos.Inventory.Item.ItemId\"\"\n CollectDailyDefenderBonusMessage\"K\n\x15UseItemXpBoostMessage\x12\x32\n\x07item_id\x18\x01 \x01(\x0e\x32!.POGOProtos.Inventory.Item.ItemId\"O\n\x10SetAvatarMessage\x12;\n\rplayer_avatar\x18\x02 \x01(\x0b\x32$.POGOProtos.Data.Player.PlayerAvatar\"\xec\x01\n\x10\x41ttackGymMessage\x12\x0e\n\x06gym_id\x18\x01 \x01(\t\x12\x11\n\tbattle_id\x18\x02 \x01(\t\x12<\n\x0e\x61ttack_actions\x18\x03 \x03(\x0b\x32$.POGOProtos.Data.Battle.BattleAction\x12\x44\n\x16last_retrieved_actions\x18\x04 \x01(\x0b\x32$.POGOProtos.Data.Battle.BattleAction\x12\x17\n\x0fplayer_latitude\x18\x05 \x01(\x01\x12\x18\n\x10player_longitude\x18\x06 \x01(\x01\"\x86\x01\n\x14GetGymDetailsMessage\x12\x0e\n\x06gym_id\x18\x01 \x01(\t\x12\x17\n\x0fplayer_latitude\x18\x02 \x01(\x01\x12\x18\n\x10player_longitude\x18\x03 \x01(\x01\x12\x14\n\x0cgym_latitude\x18\x04 \x01(\x01\x12\x15\n\rgym_longitude\x18\x05 \x01(\x01\"\'\n\x17\x44ownloadSettingsMessage\x12\x0c\n\x04hash\x18\x01 \x01(\t\"\r\n\x0b\x45\x63hoMessage\"D\n\x19SetFavoritePokemonMessage\x12\x12\n\npokemon_id\x18\x01 \x01(\x04\x12\x13\n\x0bis_favorite\x18\x02 \x01(\x08\"\x9b\x01\n\x1bMarkTutorialCompleteMessage\x12<\n\x13tutorials_completed\x18\x01 \x03(\x0e\x32\x1f.POGOProtos.Enums.TutorialState\x12\x1d\n\x15send_marketing_emails\x18\x02 \x01(\x08\x12\x1f\n\x17send_push_notifications\x18\x03 \x01(\x08\"K\n\x17IncenseEncounterMessage\x12\x14\n\x0c\x65ncounter_id\x18\x01 \x01(\x03\x12\x1a\n\x12\x65ncounter_location\x18\x02 \x01(\t\"\x12\n\x10GetPlayerMessage\"p\n\x14GetMapObjectsMessage\x12\x13\n\x07\x63\x65ll_id\x18\x01 \x03(\x04\x42\x02\x10\x01\x12\x1e\n\x12since_timestamp_ms\x18\x02 \x03(\x03\x42\x02\x10\x01\x12\x10\n\x08latitude\x18\x03 \x01(\x01\x12\x11\n\tlongitude\x18\x04 \x01(\x01\"p\n\x14\x44iskEncounterMessage\x12\x14\n\x0c\x65ncounter_id\x18\x01 \x01(\x04\x12\x0f\n\x07\x66ort_id\x18\x02 \x01(\t\x12\x17\n\x0fplayer_latitude\x18\x03 \x01(\x01\x12\x18\n\x10player_longitude\x18\x04 \x01(\x01\"^\n\x14UseItemPotionMessage\x12\x32\n\x07item_id\x18\x01 \x01(\x0e\x32!.POGOProtos.Inventory.Item.ItemId\x12\x12\n\npokemon_id\x18\x02 \x01(\x04\"r\n\x18\x46ortRecallPokemonMessage\x12\x0f\n\x07\x66ort_id\x18\x01 \x01(\t\x12\x12\n\npokemon_id\x18\x02 \x01(\x04\x12\x17\n\x0fplayer_latitude\x18\x03 \x01(\x01\x12\x18\n\x10player_longitude\x18\x04 \x01(\x01\"A\n\x14SetPlayerTeamMessage\x12)\n\x04team\x18\x01 \x01(\x0e\x32\x1b.POGOProtos.Enums.TeamColor\"\x17\n\x15GetHatchedEggsMessage\"M\n\x18GetIncensePokemonMessage\x12\x17\n\x0fplayer_latitude\x18\x01 \x01(\x01\x12\x18\n\x10player_longitude\x18\x02 \x01(\x01\".\n\x17GetPlayerProfileMessage\x12\x13\n\x0bplayer_name\x18\x01 \x01(\t\"(\n\x14\x43laimCodenameMessage\x12\x10\n\x08\x63odename\x18\x01 \x01(\t\"^\n\x19SetContactSettingsMessage\x12\x41\n\x10\x63ontact_settings\x18\x01 \x01(\x0b\x32\'.POGOProtos.Data.Player.ContactSettings\"{\n\x15UseItemCaptureMessage\x12\x32\n\x07item_id\x18\x01 \x01(\x0e\x32!.POGOProtos.Inventory.Item.ItemId\x12\x14\n\x0c\x65ncounter_id\x18\x02 \x01(\x06\x12\x18\n\x10spawn_point_guid\x18\x03 \x01(\t\"\x9d\x01\n\x15GetAssetDigestMessage\x12,\n\x08platform\x18\x01 \x01(\x0e\x32\x1a.POGOProtos.Enums.Platform\x12\x1b\n\x13\x64\x65vice_manufacturer\x18\x02 \x01(\t\x12\x14\n\x0c\x64\x65vice_model\x18\x03 \x01(\t\x12\x0e\n\x06locale\x18\x04 \x01(\t\x12\x13\n\x0b\x61pp_version\x18\x05 \x01(\rP\x00P\x01P\x02P\x03\x62\x06proto3')
   ,
-  dependencies=[POGOProtos_dot_Inventory__pb2.DESCRIPTOR,POGOProtos_dot_Data_dot_Battle__pb2.DESCRIPTOR,POGOProtos_dot_Enums__pb2.DESCRIPTOR,POGOProtos_dot_Data_dot_Player__pb2.DESCRIPTOR,])
+  dependencies=[POGOProtos_dot_Inventory_dot_Item__pb2.DESCRIPTOR,POGOProtos_dot_Enums__pb2.DESCRIPTOR,POGOProtos_dot_Data_dot_Player__pb2.DESCRIPTOR,POGOProtos_dot_Data_dot_Battle__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
+
+
+_STARTGYMBATTLEMESSAGE = _descriptor.Descriptor(
+  name='StartGymBattleMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.StartGymBattleMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='gym_id', full_name='POGOProtos.Networking.Requests.Messages.StartGymBattleMessage.gym_id', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='attacking_pokemon_ids', full_name='POGOProtos.Networking.Requests.Messages.StartGymBattleMessage.attacking_pokemon_ids', index=1,
+      number=2, type=6, cpp_type=4, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='defending_pokemon_id', full_name='POGOProtos.Networking.Requests.Messages.StartGymBattleMessage.defending_pokemon_id', index=2,
+      number=3, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='player_latitude', full_name='POGOProtos.Networking.Requests.Messages.StartGymBattleMessage.player_latitude', index=3,
+      number=4, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='player_longitude', full_name='POGOProtos.Networking.Requests.Messages.StartGymBattleMessage.player_longitude', index=4,
+      number=5, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=208,
+  serialized_end=359,
+)
+
+
+_COLLECTDAILYBONUSMESSAGE = _descriptor.Descriptor(
+  name='CollectDailyBonusMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.CollectDailyBonusMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=361,
+  serialized_end=387,
+)
+
+
+_NICKNAMEPOKEMONMESSAGE = _descriptor.Descriptor(
+  name='NicknamePokemonMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.NicknamePokemonMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='pokemon_id', full_name='POGOProtos.Networking.Requests.Messages.NicknamePokemonMessage.pokemon_id', index=0,
+      number=1, type=6, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='nickname', full_name='POGOProtos.Networking.Requests.Messages.NicknamePokemonMessage.nickname', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=389,
+  serialized_end=451,
+)
+
+
+_GETSUGGESTEDCODENAMESMESSAGE = _descriptor.Descriptor(
+  name='GetSuggestedCodenamesMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.GetSuggestedCodenamesMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=453,
+  serialized_end=483,
+)
+
+
+_RECYCLEINVENTORYITEMMESSAGE = _descriptor.Descriptor(
+  name='RecycleInventoryItemMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.RecycleInventoryItemMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='item_id', full_name='POGOProtos.Networking.Requests.Messages.RecycleInventoryItemMessage.item_id', index=0,
+      number=1, type=14, cpp_type=8, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='count', full_name='POGOProtos.Networking.Requests.Messages.RecycleInventoryItemMessage.count', index=1,
+      number=2, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=485,
+  serialized_end=581,
+)
+
+
+_CHECKAWARDEDBADGESMESSAGE = _descriptor.Descriptor(
+  name='CheckAwardedBadgesMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.CheckAwardedBadgesMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=583,
+  serialized_end=610,
+)
+
+
+_LEVELUPREWARDSMESSAGE = _descriptor.Descriptor(
+  name='LevelUpRewardsMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.LevelUpRewardsMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='level', full_name='POGOProtos.Networking.Requests.Messages.LevelUpRewardsMessage.level', index=0,
+      number=1, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=612,
+  serialized_end=650,
+)
+
+
+_CATCHPOKEMONMESSAGE = _descriptor.Descriptor(
+  name='CatchPokemonMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.CatchPokemonMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='encounter_id', full_name='POGOProtos.Networking.Requests.Messages.CatchPokemonMessage.encounter_id', index=0,
+      number=1, type=6, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='pokeball', full_name='POGOProtos.Networking.Requests.Messages.CatchPokemonMessage.pokeball', index=1,
+      number=2, type=14, cpp_type=8, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='normalized_reticle_size', full_name='POGOProtos.Networking.Requests.Messages.CatchPokemonMessage.normalized_reticle_size', index=2,
+      number=3, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='spawn_point_guid', full_name='POGOProtos.Networking.Requests.Messages.CatchPokemonMessage.spawn_point_guid', index=3,
+      number=4, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='hit_pokemon', full_name='POGOProtos.Networking.Requests.Messages.CatchPokemonMessage.hit_pokemon', index=4,
+      number=5, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='spin_modifier', full_name='POGOProtos.Networking.Requests.Messages.CatchPokemonMessage.spin_modifier', index=5,
+      number=6, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='normalized_hit_position', full_name='POGOProtos.Networking.Requests.Messages.CatchPokemonMessage.normalized_hit_position', index=6,
+      number=7, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=653,
+  serialized_end=885,
+)
+
+
+_UPGRADEPOKEMONMESSAGE = _descriptor.Descriptor(
+  name='UpgradePokemonMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.UpgradePokemonMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='pokemon_id', full_name='POGOProtos.Networking.Requests.Messages.UpgradePokemonMessage.pokemon_id', index=0,
+      number=1, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=887,
+  serialized_end=930,
+)
+
+
+_ENCOUNTERTUTORIALCOMPLETEMESSAGE = _descriptor.Descriptor(
+  name='EncounterTutorialCompleteMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.EncounterTutorialCompleteMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='pokemon_id', full_name='POGOProtos.Networking.Requests.Messages.EncounterTutorialCompleteMessage.pokemon_id', index=0,
+      number=1, type=14, cpp_type=8, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=932,
+  serialized_end=1015,
+)
+
+
+_DOWNLOADREMOTECONFIGVERSIONMESSAGE = _descriptor.Descriptor(
+  name='DownloadRemoteConfigVersionMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.DownloadRemoteConfigVersionMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='platform', full_name='POGOProtos.Networking.Requests.Messages.DownloadRemoteConfigVersionMessage.platform', index=0,
+      number=1, type=14, cpp_type=8, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='device_manufacturer', full_name='POGOProtos.Networking.Requests.Messages.DownloadRemoteConfigVersionMessage.device_manufacturer', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='device_model', full_name='POGOProtos.Networking.Requests.Messages.DownloadRemoteConfigVersionMessage.device_model', index=2,
+      number=3, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='locale', full_name='POGOProtos.Networking.Requests.Messages.DownloadRemoteConfigVersionMessage.locale', index=3,
+      number=4, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='app_version', full_name='POGOProtos.Networking.Requests.Messages.DownloadRemoteConfigVersionMessage.app_version', index=4,
+      number=5, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1018,
+  serialized_end=1188,
+)
+
+
+_USEITEMREVIVEMESSAGE = _descriptor.Descriptor(
+  name='UseItemReviveMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.UseItemReviveMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='item_id', full_name='POGOProtos.Networking.Requests.Messages.UseItemReviveMessage.item_id', index=0,
+      number=1, type=14, cpp_type=8, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='pokemon_id', full_name='POGOProtos.Networking.Requests.Messages.UseItemReviveMessage.pokemon_id', index=1,
+      number=2, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1190,
+  serialized_end=1284,
+)
+
+
+_FORTDETAILSMESSAGE = _descriptor.Descriptor(
+  name='FortDetailsMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.FortDetailsMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='fort_id', full_name='POGOProtos.Networking.Requests.Messages.FortDetailsMessage.fort_id', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='latitude', full_name='POGOProtos.Networking.Requests.Messages.FortDetailsMessage.latitude', index=1,
+      number=2, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='longitude', full_name='POGOProtos.Networking.Requests.Messages.FortDetailsMessage.longitude', index=2,
+      number=3, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1286,
+  serialized_end=1360,
+)
+
+
+_FORTSEARCHMESSAGE = _descriptor.Descriptor(
+  name='FortSearchMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.FortSearchMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='fort_id', full_name='POGOProtos.Networking.Requests.Messages.FortSearchMessage.fort_id', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='player_latitude', full_name='POGOProtos.Networking.Requests.Messages.FortSearchMessage.player_latitude', index=1,
+      number=2, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='player_longitude', full_name='POGOProtos.Networking.Requests.Messages.FortSearchMessage.player_longitude', index=2,
+      number=3, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='fort_latitude', full_name='POGOProtos.Networking.Requests.Messages.FortSearchMessage.fort_latitude', index=3,
+      number=4, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='fort_longitude', full_name='POGOProtos.Networking.Requests.Messages.FortSearchMessage.fort_longitude', index=4,
+      number=5, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1363,
+  serialized_end=1497,
+)
+
+
+_USEITEMGYMMESSAGE = _descriptor.Descriptor(
+  name='UseItemGymMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.UseItemGymMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='item_id', full_name='POGOProtos.Networking.Requests.Messages.UseItemGymMessage.item_id', index=0,
+      number=1, type=14, cpp_type=8, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='gym_id', full_name='POGOProtos.Networking.Requests.Messages.UseItemGymMessage.gym_id', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='player_latitude', full_name='POGOProtos.Networking.Requests.Messages.UseItemGymMessage.player_latitude', index=2,
+      number=3, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='player_longitude', full_name='POGOProtos.Networking.Requests.Messages.UseItemGymMessage.player_longitude', index=3,
+      number=4, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1500,
+  serialized_end=1638,
+)
+
+
+_GETINVENTORYMESSAGE = _descriptor.Descriptor(
+  name='GetInventoryMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.GetInventoryMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='last_timestamp_ms', full_name='POGOProtos.Networking.Requests.Messages.GetInventoryMessage.last_timestamp_ms', index=0,
+      number=1, type=3, cpp_type=2, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='item_been_seen', full_name='POGOProtos.Networking.Requests.Messages.GetInventoryMessage.item_been_seen', index=1,
+      number=2, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1640,
+  serialized_end=1712,
+)
+
+
+_RELEASEPOKEMONMESSAGE = _descriptor.Descriptor(
+  name='ReleasePokemonMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.ReleasePokemonMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='pokemon_id', full_name='POGOProtos.Networking.Requests.Messages.ReleasePokemonMessage.pokemon_id', index=0,
+      number=1, type=6, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1714,
+  serialized_end=1757,
+)
+
+
+_SFIDAACTIONLOGMESSAGE = _descriptor.Descriptor(
+  name='SfidaActionLogMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.SfidaActionLogMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1759,
+  serialized_end=1782,
+)
+
+
+_FORTDEPLOYPOKEMONMESSAGE = _descriptor.Descriptor(
+  name='FortDeployPokemonMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.FortDeployPokemonMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='fort_id', full_name='POGOProtos.Networking.Requests.Messages.FortDeployPokemonMessage.fort_id', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='pokemon_id', full_name='POGOProtos.Networking.Requests.Messages.FortDeployPokemonMessage.pokemon_id', index=1,
+      number=2, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='player_latitude', full_name='POGOProtos.Networking.Requests.Messages.FortDeployPokemonMessage.player_latitude', index=2,
+      number=3, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='player_longitude', full_name='POGOProtos.Networking.Requests.Messages.FortDeployPokemonMessage.player_longitude', index=3,
+      number=4, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1784,
+  serialized_end=1898,
+)
+
+
+_GETDOWNLOADURLSMESSAGE = _descriptor.Descriptor(
+  name='GetDownloadUrlsMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.GetDownloadUrlsMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='asset_id', full_name='POGOProtos.Networking.Requests.Messages.GetDownloadUrlsMessage.asset_id', index=0,
+      number=1, type=9, cpp_type=9, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1900,
+  serialized_end=1942,
+)
 
 
 _ADDFORTMODIFIERMESSAGE = _descriptor.Descriptor(
@@ -113,8 +903,370 @@ _ADDFORTMODIFIERMESSAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=203,
-  serialized_end=348,
+  serialized_start=1945,
+  serialized_end=2095,
+)
+
+
+_EVOLVEPOKEMONMESSAGE = _descriptor.Descriptor(
+  name='EvolvePokemonMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.EvolvePokemonMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='pokemon_id', full_name='POGOProtos.Networking.Requests.Messages.EvolvePokemonMessage.pokemon_id', index=0,
+      number=1, type=6, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=2097,
+  serialized_end=2139,
+)
+
+
+_DOWNLOADITEMTEMPLATESMESSAGE = _descriptor.Descriptor(
+  name='DownloadItemTemplatesMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.DownloadItemTemplatesMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=2141,
+  serialized_end=2171,
+)
+
+
+_ENCOUNTERMESSAGE = _descriptor.Descriptor(
+  name='EncounterMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.EncounterMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='encounter_id', full_name='POGOProtos.Networking.Requests.Messages.EncounterMessage.encounter_id', index=0,
+      number=1, type=6, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='spawn_point_id', full_name='POGOProtos.Networking.Requests.Messages.EncounterMessage.spawn_point_id', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='player_latitude', full_name='POGOProtos.Networking.Requests.Messages.EncounterMessage.player_latitude', index=2,
+      number=3, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='player_longitude', full_name='POGOProtos.Networking.Requests.Messages.EncounterMessage.player_longitude', index=3,
+      number=4, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=2173,
+  serialized_end=2288,
+)
+
+
+_PLAYERUPDATEMESSAGE = _descriptor.Descriptor(
+  name='PlayerUpdateMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.PlayerUpdateMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='latitude', full_name='POGOProtos.Networking.Requests.Messages.PlayerUpdateMessage.latitude', index=0,
+      number=1, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='longitude', full_name='POGOProtos.Networking.Requests.Messages.PlayerUpdateMessage.longitude', index=1,
+      number=2, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=2290,
+  serialized_end=2348,
+)
+
+
+_EQUIPBADGEMESSAGE = _descriptor.Descriptor(
+  name='EquipBadgeMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.EquipBadgeMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='badge_type', full_name='POGOProtos.Networking.Requests.Messages.EquipBadgeMessage.badge_type', index=0,
+      number=1, type=14, cpp_type=8, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=2350,
+  serialized_end=2418,
+)
+
+
+_CHECKCODENAMEAVAILABLEMESSAGE = _descriptor.Descriptor(
+  name='CheckCodenameAvailableMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.CheckCodenameAvailableMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='codename', full_name='POGOProtos.Networking.Requests.Messages.CheckCodenameAvailableMessage.codename', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=2420,
+  serialized_end=2469,
+)
+
+
+_USEITEMEGGINCUBATORMESSAGE = _descriptor.Descriptor(
+  name='UseItemEggIncubatorMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.UseItemEggIncubatorMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='item_id', full_name='POGOProtos.Networking.Requests.Messages.UseItemEggIncubatorMessage.item_id', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='pokemon_id', full_name='POGOProtos.Networking.Requests.Messages.UseItemEggIncubatorMessage.pokemon_id', index=1,
+      number=2, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=2471,
+  serialized_end=2536,
+)
+
+
+_USEINCENSEMESSAGE = _descriptor.Descriptor(
+  name='UseIncenseMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.UseIncenseMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='incense_type', full_name='POGOProtos.Networking.Requests.Messages.UseIncenseMessage.incense_type', index=0,
+      number=1, type=14, cpp_type=8, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=2538,
+  serialized_end=2614,
+)
+
+
+_COLLECTDAILYDEFENDERBONUSMESSAGE = _descriptor.Descriptor(
+  name='CollectDailyDefenderBonusMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.CollectDailyDefenderBonusMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=2616,
+  serialized_end=2650,
+)
+
+
+_USEITEMXPBOOSTMESSAGE = _descriptor.Descriptor(
+  name='UseItemXpBoostMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.UseItemXpBoostMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='item_id', full_name='POGOProtos.Networking.Requests.Messages.UseItemXpBoostMessage.item_id', index=0,
+      number=1, type=14, cpp_type=8, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=2652,
+  serialized_end=2727,
+)
+
+
+_SETAVATARMESSAGE = _descriptor.Descriptor(
+  name='SetAvatarMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.SetAvatarMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='player_avatar', full_name='POGOProtos.Networking.Requests.Messages.SetAvatarMessage.player_avatar', index=0,
+      number=2, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=2729,
+  serialized_end=2808,
 )
 
 
@@ -179,848 +1331,8 @@ _ATTACKGYMMESSAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=351,
-  serialized_end=587,
-)
-
-
-_CATCHPOKEMONMESSAGE = _descriptor.Descriptor(
-  name='CatchPokemonMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.CatchPokemonMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='encounter_id', full_name='POGOProtos.Networking.Requests.Messages.CatchPokemonMessage.encounter_id', index=0,
-      number=1, type=6, cpp_type=4, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='pokeball', full_name='POGOProtos.Networking.Requests.Messages.CatchPokemonMessage.pokeball', index=1,
-      number=2, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='normalized_reticle_size', full_name='POGOProtos.Networking.Requests.Messages.CatchPokemonMessage.normalized_reticle_size', index=2,
-      number=3, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='spawn_point_guid', full_name='POGOProtos.Networking.Requests.Messages.CatchPokemonMessage.spawn_point_guid', index=3,
-      number=4, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='hit_pokemon', full_name='POGOProtos.Networking.Requests.Messages.CatchPokemonMessage.hit_pokemon', index=4,
-      number=5, type=8, cpp_type=7, label=1,
-      has_default_value=False, default_value=False,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='spin_modifier', full_name='POGOProtos.Networking.Requests.Messages.CatchPokemonMessage.spin_modifier', index=5,
-      number=6, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='NormalizedHitPosition', full_name='POGOProtos.Networking.Requests.Messages.CatchPokemonMessage.NormalizedHitPosition', index=6,
-      number=7, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=590,
-  serialized_end=785,
-)
-
-
-_CHECKAWARDEDBADGESMESSAGE = _descriptor.Descriptor(
-  name='CheckAwardedBadgesMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.CheckAwardedBadgesMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=787,
-  serialized_end=814,
-)
-
-
-_CHECKCODENAMEAVAILABLEMESSAGE = _descriptor.Descriptor(
-  name='CheckCodenameAvailableMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.CheckCodenameAvailableMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='codename', full_name='POGOProtos.Networking.Requests.Messages.CheckCodenameAvailableMessage.codename', index=0,
-      number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=816,
-  serialized_end=865,
-)
-
-
-_CLAIMCODENAMEMESSAGE = _descriptor.Descriptor(
-  name='ClaimCodenameMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.ClaimCodenameMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='codename', full_name='POGOProtos.Networking.Requests.Messages.ClaimCodenameMessage.codename', index=0,
-      number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=867,
-  serialized_end=907,
-)
-
-
-_COLLECTDAILYBONUSMESSAGE = _descriptor.Descriptor(
-  name='CollectDailyBonusMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.CollectDailyBonusMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=909,
-  serialized_end=935,
-)
-
-
-_COLLECTDAILYDEFENDERBONUSMESSAGE = _descriptor.Descriptor(
-  name='CollectDailyDefenderBonusMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.CollectDailyDefenderBonusMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=937,
-  serialized_end=971,
-)
-
-
-_DISKENCOUNTERMESSAGE = _descriptor.Descriptor(
-  name='DiskEncounterMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.DiskEncounterMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='encounter_id', full_name='POGOProtos.Networking.Requests.Messages.DiskEncounterMessage.encounter_id', index=0,
-      number=1, type=6, cpp_type=4, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='fort_id', full_name='POGOProtos.Networking.Requests.Messages.DiskEncounterMessage.fort_id', index=1,
-      number=2, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='player_latitude', full_name='POGOProtos.Networking.Requests.Messages.DiskEncounterMessage.player_latitude', index=2,
-      number=3, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='player_longitude', full_name='POGOProtos.Networking.Requests.Messages.DiskEncounterMessage.player_longitude', index=3,
-      number=4, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=973,
-  serialized_end=1085,
-)
-
-
-_DOWNLOADITEMTEMPLATESMESSAGE = _descriptor.Descriptor(
-  name='DownloadItemTemplatesMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.DownloadItemTemplatesMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=1087,
-  serialized_end=1117,
-)
-
-
-_DOWNLOADREMOTECONFIGVERSIONMESSAGE = _descriptor.Descriptor(
-  name='DownloadRemoteConfigVersionMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.DownloadRemoteConfigVersionMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='platform', full_name='POGOProtos.Networking.Requests.Messages.DownloadRemoteConfigVersionMessage.platform', index=0,
-      number=1, type=14, cpp_type=8, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='device_manufacturer', full_name='POGOProtos.Networking.Requests.Messages.DownloadRemoteConfigVersionMessage.device_manufacturer', index=1,
-      number=2, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='device_model', full_name='POGOProtos.Networking.Requests.Messages.DownloadRemoteConfigVersionMessage.device_model', index=2,
-      number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='locale', full_name='POGOProtos.Networking.Requests.Messages.DownloadRemoteConfigVersionMessage.locale', index=3,
-      number=4, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='app_version', full_name='POGOProtos.Networking.Requests.Messages.DownloadRemoteConfigVersionMessage.app_version', index=4,
-      number=5, type=13, cpp_type=3, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=1120,
-  serialized_end=1290,
-)
-
-
-_DOWNLOADSETTINGSMESSAGE = _descriptor.Descriptor(
-  name='DownloadSettingsMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.DownloadSettingsMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='hash', full_name='POGOProtos.Networking.Requests.Messages.DownloadSettingsMessage.hash', index=0,
-      number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=1292,
-  serialized_end=1331,
-)
-
-
-_ECHOMESSAGE = _descriptor.Descriptor(
-  name='EchoMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.EchoMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=1333,
-  serialized_end=1346,
-)
-
-
-_ENCOUNTERMESSAGE = _descriptor.Descriptor(
-  name='EncounterMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.EncounterMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='encounter_id', full_name='POGOProtos.Networking.Requests.Messages.EncounterMessage.encounter_id', index=0,
-      number=1, type=6, cpp_type=4, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='spawnpoint_id', full_name='POGOProtos.Networking.Requests.Messages.EncounterMessage.spawnpoint_id', index=1,
-      number=2, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='player_latitude', full_name='POGOProtos.Networking.Requests.Messages.EncounterMessage.player_latitude', index=2,
-      number=3, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='player_longitude', full_name='POGOProtos.Networking.Requests.Messages.EncounterMessage.player_longitude', index=3,
-      number=4, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=1348,
-  serialized_end=1462,
-)
-
-
-_ENCOUNTERTUTORIALCOMPLETEMESSAGE = _descriptor.Descriptor(
-  name='EncounterTutorialCompleteMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.EncounterTutorialCompleteMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='pokemon_id', full_name='POGOProtos.Networking.Requests.Messages.EncounterTutorialCompleteMessage.pokemon_id', index=0,
-      number=1, type=14, cpp_type=8, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=1464,
-  serialized_end=1547,
-)
-
-
-_EQUIPBADGEMESSAGE = _descriptor.Descriptor(
-  name='EquipBadgeMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.EquipBadgeMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='badge_type', full_name='POGOProtos.Networking.Requests.Messages.EquipBadgeMessage.badge_type', index=0,
-      number=1, type=14, cpp_type=8, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=1549,
-  serialized_end=1617,
-)
-
-
-_EVOLVEPOKEMONMESSAGE = _descriptor.Descriptor(
-  name='EvolvePokemonMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.EvolvePokemonMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='pokemon_id', full_name='POGOProtos.Networking.Requests.Messages.EvolvePokemonMessage.pokemon_id', index=0,
-      number=1, type=6, cpp_type=4, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=1619,
-  serialized_end=1661,
-)
-
-
-_FORTDEPLOYPROTO = _descriptor.Descriptor(
-  name='FortDeployProto',
-  full_name='POGOProtos.Networking.Requests.Messages.FortDeployProto',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='fort_id', full_name='POGOProtos.Networking.Requests.Messages.FortDeployProto.fort_id', index=0,
-      number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='pokemon_id', full_name='POGOProtos.Networking.Requests.Messages.FortDeployProto.pokemon_id', index=1,
-      number=2, type=4, cpp_type=4, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='player_latitude', full_name='POGOProtos.Networking.Requests.Messages.FortDeployProto.player_latitude', index=2,
-      number=3, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='player_longitude', full_name='POGOProtos.Networking.Requests.Messages.FortDeployProto.player_longitude', index=3,
-      number=4, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=1663,
-  serialized_end=1768,
-)
-
-
-_FORTDETAILSMESSAGE = _descriptor.Descriptor(
-  name='FortDetailsMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.FortDetailsMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='fort_id', full_name='POGOProtos.Networking.Requests.Messages.FortDetailsMessage.fort_id', index=0,
-      number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='latitude', full_name='POGOProtos.Networking.Requests.Messages.FortDetailsMessage.latitude', index=1,
-      number=2, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='longitude', full_name='POGOProtos.Networking.Requests.Messages.FortDetailsMessage.longitude', index=2,
-      number=3, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=1770,
-  serialized_end=1844,
-)
-
-
-_FORTRECALLPOKEMONMESSAGE = _descriptor.Descriptor(
-  name='FortRecallPokemonMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.FortRecallPokemonMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='fort_id', full_name='POGOProtos.Networking.Requests.Messages.FortRecallPokemonMessage.fort_id', index=0,
-      number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='pokemon_id', full_name='POGOProtos.Networking.Requests.Messages.FortRecallPokemonMessage.pokemon_id', index=1,
-      number=2, type=4, cpp_type=4, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='player_latitude', full_name='POGOProtos.Networking.Requests.Messages.FortRecallPokemonMessage.player_latitude', index=2,
-      number=3, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='player_longitude', full_name='POGOProtos.Networking.Requests.Messages.FortRecallPokemonMessage.player_longitude', index=3,
-      number=4, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=1846,
-  serialized_end=1960,
-)
-
-
-_FORTSEARCHMESSAGE = _descriptor.Descriptor(
-  name='FortSearchMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.FortSearchMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='fort_id', full_name='POGOProtos.Networking.Requests.Messages.FortSearchMessage.fort_id', index=0,
-      number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='player_latitude', full_name='POGOProtos.Networking.Requests.Messages.FortSearchMessage.player_latitude', index=1,
-      number=2, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='player_longitude', full_name='POGOProtos.Networking.Requests.Messages.FortSearchMessage.player_longitude', index=2,
-      number=3, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='fort_latitude', full_name='POGOProtos.Networking.Requests.Messages.FortSearchMessage.fort_latitude', index=3,
-      number=4, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='fort_longitude', full_name='POGOProtos.Networking.Requests.Messages.FortSearchMessage.fort_longitude', index=4,
-      number=5, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=1963,
-  serialized_end=2097,
-)
-
-
-_GETASSETDIGESTMESSAGE = _descriptor.Descriptor(
-  name='GetAssetDigestMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.GetAssetDigestMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='platform', full_name='POGOProtos.Networking.Requests.Messages.GetAssetDigestMessage.platform', index=0,
-      number=1, type=14, cpp_type=8, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='device_manufacturer', full_name='POGOProtos.Networking.Requests.Messages.GetAssetDigestMessage.device_manufacturer', index=1,
-      number=2, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='device_model', full_name='POGOProtos.Networking.Requests.Messages.GetAssetDigestMessage.device_model', index=2,
-      number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='locale', full_name='POGOProtos.Networking.Requests.Messages.GetAssetDigestMessage.locale', index=3,
-      number=4, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='app_version', full_name='POGOProtos.Networking.Requests.Messages.GetAssetDigestMessage.app_version', index=4,
-      number=5, type=13, cpp_type=3, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=2100,
-  serialized_end=2257,
-)
-
-
-_GETDOWNLOADURLSMESSAGE = _descriptor.Descriptor(
-  name='GetDownloadUrlsMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.GetDownloadUrlsMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='asset_id', full_name='POGOProtos.Networking.Requests.Messages.GetDownloadUrlsMessage.asset_id', index=0,
-      number=1, type=9, cpp_type=9, label=3,
-      has_default_value=False, default_value=[],
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=2259,
-  serialized_end=2301,
+  serialized_start=2811,
+  serialized_end=3047,
 )
 
 
@@ -1078,14 +1390,45 @@ _GETGYMDETAILSMESSAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2304,
-  serialized_end=2438,
+  serialized_start=3050,
+  serialized_end=3184,
 )
 
 
-_GETHATCHEDEGGSMESSAGE = _descriptor.Descriptor(
-  name='GetHatchedEggsMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.GetHatchedEggsMessage',
+_DOWNLOADSETTINGSMESSAGE = _descriptor.Descriptor(
+  name='DownloadSettingsMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.DownloadSettingsMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='hash', full_name='POGOProtos.Networking.Requests.Messages.DownloadSettingsMessage.hash', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=3186,
+  serialized_end=3225,
+)
+
+
+_ECHOMESSAGE = _descriptor.Descriptor(
+  name='EchoMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.EchoMessage',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
@@ -1102,29 +1445,29 @@ _GETHATCHEDEGGSMESSAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2440,
-  serialized_end=2463,
+  serialized_start=3227,
+  serialized_end=3240,
 )
 
 
-_GETINCENSEPOKEMONMESSAGE = _descriptor.Descriptor(
-  name='GetIncensePokemonMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.GetIncensePokemonMessage',
+_SETFAVORITEPOKEMONMESSAGE = _descriptor.Descriptor(
+  name='SetFavoritePokemonMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.SetFavoritePokemonMessage',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='player_latitude', full_name='POGOProtos.Networking.Requests.Messages.GetIncensePokemonMessage.player_latitude', index=0,
-      number=1, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      name='pokemon_id', full_name='POGOProtos.Networking.Requests.Messages.SetFavoritePokemonMessage.pokemon_id', index=0,
+      number=1, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='player_longitude', full_name='POGOProtos.Networking.Requests.Messages.GetIncensePokemonMessage.player_longitude', index=1,
-      number=2, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      name='is_favorite', full_name='POGOProtos.Networking.Requests.Messages.SetFavoritePokemonMessage.is_favorite', index=1,
+      number=2, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -1140,29 +1483,74 @@ _GETINCENSEPOKEMONMESSAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2465,
-  serialized_end=2542,
+  serialized_start=3242,
+  serialized_end=3310,
 )
 
 
-_GETINVENTORYMESSAGE = _descriptor.Descriptor(
-  name='GetInventoryMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.GetInventoryMessage',
+_MARKTUTORIALCOMPLETEMESSAGE = _descriptor.Descriptor(
+  name='MarkTutorialCompleteMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.MarkTutorialCompleteMessage',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='last_timestamp_ms', full_name='POGOProtos.Networking.Requests.Messages.GetInventoryMessage.last_timestamp_ms', index=0,
+      name='tutorials_completed', full_name='POGOProtos.Networking.Requests.Messages.MarkTutorialCompleteMessage.tutorials_completed', index=0,
+      number=1, type=14, cpp_type=8, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='send_marketing_emails', full_name='POGOProtos.Networking.Requests.Messages.MarkTutorialCompleteMessage.send_marketing_emails', index=1,
+      number=2, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='send_push_notifications', full_name='POGOProtos.Networking.Requests.Messages.MarkTutorialCompleteMessage.send_push_notifications', index=2,
+      number=3, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=3313,
+  serialized_end=3468,
+)
+
+
+_INCENSEENCOUNTERMESSAGE = _descriptor.Descriptor(
+  name='IncenseEncounterMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.IncenseEncounterMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='encounter_id', full_name='POGOProtos.Networking.Requests.Messages.IncenseEncounterMessage.encounter_id', index=0,
       number=1, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='item_been_seen', full_name='POGOProtos.Networking.Requests.Messages.GetInventoryMessage.item_been_seen', index=1,
-      number=2, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
+      name='encounter_location', full_name='POGOProtos.Networking.Requests.Messages.IncenseEncounterMessage.encounter_location', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -1178,8 +1566,32 @@ _GETINVENTORYMESSAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2544,
-  serialized_end=2616,
+  serialized_start=3470,
+  serialized_end=3545,
+)
+
+
+_GETPLAYERMESSAGE = _descriptor.Descriptor(
+  name='GetPlayerMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.GetPlayerMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=3547,
+  serialized_end=3565,
 )
 
 
@@ -1230,214 +1642,42 @@ _GETMAPOBJECTSMESSAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2618,
-  serialized_end=2730,
+  serialized_start=3567,
+  serialized_end=3679,
 )
 
 
-_GETPLAYERMESSAGE = _descriptor.Descriptor(
-  name='GetPlayerMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.GetPlayerMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=2732,
-  serialized_end=2750,
-)
-
-
-_GETPLAYERPROFILEMESSAGE = _descriptor.Descriptor(
-  name='GetPlayerProfileMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.GetPlayerProfileMessage',
+_DISKENCOUNTERMESSAGE = _descriptor.Descriptor(
+  name='DiskEncounterMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.DiskEncounterMessage',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='player_name', full_name='POGOProtos.Networking.Requests.Messages.GetPlayerProfileMessage.player_name', index=0,
-      number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=2752,
-  serialized_end=2798,
-)
-
-
-_GETSUGGESTEDCODENAMESMESSAGE = _descriptor.Descriptor(
-  name='GetSuggestedCodenamesMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.GetSuggestedCodenamesMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=2800,
-  serialized_end=2830,
-)
-
-
-_INCENSEENCOUNTERMESSAGE = _descriptor.Descriptor(
-  name='IncenseEncounterMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.IncenseEncounterMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='encounter_id', full_name='POGOProtos.Networking.Requests.Messages.IncenseEncounterMessage.encounter_id', index=0,
-      number=1, type=3, cpp_type=2, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='encounter_location', full_name='POGOProtos.Networking.Requests.Messages.IncenseEncounterMessage.encounter_location', index=1,
-      number=2, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=2832,
-  serialized_end=2907,
-)
-
-
-_LEVELUPREWARDSMESSAGE = _descriptor.Descriptor(
-  name='LevelUpRewardsMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.LevelUpRewardsMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='level', full_name='POGOProtos.Networking.Requests.Messages.LevelUpRewardsMessage.level', index=0,
-      number=1, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=2909,
-  serialized_end=2947,
-)
-
-
-_NICKNAMEPOKEMONMESSAGE = _descriptor.Descriptor(
-  name='NicknamePokemonMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.NicknamePokemonMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='pokemon_id', full_name='POGOProtos.Networking.Requests.Messages.NicknamePokemonMessage.pokemon_id', index=0,
+      name='encounter_id', full_name='POGOProtos.Networking.Requests.Messages.DiskEncounterMessage.encounter_id', index=0,
       number=1, type=4, cpp_type=4, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='nickname', full_name='POGOProtos.Networking.Requests.Messages.NicknamePokemonMessage.nickname', index=1,
+      name='fort_id', full_name='POGOProtos.Networking.Requests.Messages.DiskEncounterMessage.fort_id', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=2949,
-  serialized_end=3011,
-)
-
-
-_PLAYERUPDATEMESSAGE = _descriptor.Descriptor(
-  name='PlayerUpdateMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.PlayerUpdateMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
     _descriptor.FieldDescriptor(
-      name='latitude', full_name='POGOProtos.Networking.Requests.Messages.PlayerUpdateMessage.latitude', index=0,
-      number=1, type=1, cpp_type=5, label=1,
+      name='player_latitude', full_name='POGOProtos.Networking.Requests.Messages.DiskEncounterMessage.player_latitude', index=2,
+      number=3, type=1, cpp_type=5, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='longitude', full_name='POGOProtos.Networking.Requests.Messages.PlayerUpdateMessage.longitude', index=1,
-      number=2, type=1, cpp_type=5, label=1,
+      name='player_longitude', full_name='POGOProtos.Networking.Requests.Messages.DiskEncounterMessage.player_longitude', index=3,
+      number=4, type=1, cpp_type=5, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -1454,28 +1694,28 @@ _PLAYERUPDATEMESSAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3013,
-  serialized_end=3071,
+  serialized_start=3681,
+  serialized_end=3793,
 )
 
 
-_RECYCLEINVENTORYITEMMESSAGE = _descriptor.Descriptor(
-  name='RecycleInventoryItemMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.RecycleInventoryItemMessage',
+_USEITEMPOTIONMESSAGE = _descriptor.Descriptor(
+  name='UseItemPotionMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.UseItemPotionMessage',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='item_id', full_name='POGOProtos.Networking.Requests.Messages.RecycleInventoryItemMessage.item_id', index=0,
+      name='item_id', full_name='POGOProtos.Networking.Requests.Messages.UseItemPotionMessage.item_id', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='count', full_name='POGOProtos.Networking.Requests.Messages.RecycleInventoryItemMessage.count', index=1,
-      number=2, type=5, cpp_type=1, label=1,
+      name='pokemon_id', full_name='POGOProtos.Networking.Requests.Messages.UseItemPotionMessage.pokemon_id', index=1,
+      number=2, type=4, cpp_type=4, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -1492,122 +1732,43 @@ _RECYCLEINVENTORYITEMMESSAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3073,
-  serialized_end=3164,
+  serialized_start=3795,
+  serialized_end=3889,
 )
 
 
-_RELEASEPOKEMONMESSAGE = _descriptor.Descriptor(
-  name='ReleasePokemonMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.ReleasePokemonMessage',
+_FORTRECALLPOKEMONMESSAGE = _descriptor.Descriptor(
+  name='FortRecallPokemonMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.FortRecallPokemonMessage',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='pokemon_id', full_name='POGOProtos.Networking.Requests.Messages.ReleasePokemonMessage.pokemon_id', index=0,
-      number=1, type=6, cpp_type=4, label=1,
-      has_default_value=False, default_value=0,
+      name='fort_id', full_name='POGOProtos.Networking.Requests.Messages.FortRecallPokemonMessage.fort_id', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=3166,
-  serialized_end=3209,
-)
-
-
-_SETAVATARMESSAGE = _descriptor.Descriptor(
-  name='SetAvatarMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.SetAvatarMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
     _descriptor.FieldDescriptor(
-      name='player_avatar', full_name='POGOProtos.Networking.Requests.Messages.SetAvatarMessage.player_avatar', index=0,
-      number=2, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=3211,
-  serialized_end=3290,
-)
-
-
-_SETCONTACTSETTINGSMESSAGE = _descriptor.Descriptor(
-  name='SetContactSettingsMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.SetContactSettingsMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='contact_settings', full_name='POGOProtos.Networking.Requests.Messages.SetContactSettingsMessage.contact_settings', index=0,
-      number=1, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=3292,
-  serialized_end=3386,
-)
-
-
-_SETFAVORITEPOKEMONMESSAGE = _descriptor.Descriptor(
-  name='SetFavoritePokemonMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.SetFavoritePokemonMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='pokemon_id', full_name='POGOProtos.Networking.Requests.Messages.SetFavoritePokemonMessage.pokemon_id', index=0,
-      number=1, type=4, cpp_type=4, label=1,
+      name='pokemon_id', full_name='POGOProtos.Networking.Requests.Messages.FortRecallPokemonMessage.pokemon_id', index=1,
+      number=2, type=4, cpp_type=4, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='is_favorite', full_name='POGOProtos.Networking.Requests.Messages.SetFavoritePokemonMessage.is_favorite', index=1,
-      number=2, type=8, cpp_type=7, label=1,
-      has_default_value=False, default_value=False,
+      name='player_latitude', full_name='POGOProtos.Networking.Requests.Messages.FortRecallPokemonMessage.player_latitude', index=2,
+      number=3, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='player_longitude', full_name='POGOProtos.Networking.Requests.Messages.FortRecallPokemonMessage.player_longitude', index=3,
+      number=4, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -1623,8 +1784,8 @@ _SETFAVORITEPOKEMONMESSAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3388,
-  serialized_end=3456,
+  serialized_start=3891,
+  serialized_end=4005,
 )
 
 
@@ -1654,53 +1815,87 @@ _SETPLAYERTEAMMESSAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3458,
-  serialized_end=3523,
+  serialized_start=4007,
+  serialized_end=4072,
 )
 
 
-_STARTGYMBATTLEMESSAGE = _descriptor.Descriptor(
-  name='StartGymBattleMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.StartGymBattleMessage',
+_GETHATCHEDEGGSMESSAGE = _descriptor.Descriptor(
+  name='GetHatchedEggsMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.GetHatchedEggsMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=4074,
+  serialized_end=4097,
+)
+
+
+_GETINCENSEPOKEMONMESSAGE = _descriptor.Descriptor(
+  name='GetIncensePokemonMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.GetIncensePokemonMessage',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='gym_id', full_name='POGOProtos.Networking.Requests.Messages.StartGymBattleMessage.gym_id', index=0,
+      name='player_latitude', full_name='POGOProtos.Networking.Requests.Messages.GetIncensePokemonMessage.player_latitude', index=0,
+      number=1, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='player_longitude', full_name='POGOProtos.Networking.Requests.Messages.GetIncensePokemonMessage.player_longitude', index=1,
+      number=2, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=4099,
+  serialized_end=4176,
+)
+
+
+_GETPLAYERPROFILEMESSAGE = _descriptor.Descriptor(
+  name='GetPlayerProfileMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.GetPlayerProfileMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='player_name', full_name='POGOProtos.Networking.Requests.Messages.GetPlayerProfileMessage.player_name', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
-    _descriptor.FieldDescriptor(
-      name='attacking_pokemon_ids', full_name='POGOProtos.Networking.Requests.Messages.StartGymBattleMessage.attacking_pokemon_ids', index=1,
-      number=2, type=4, cpp_type=4, label=3,
-      has_default_value=False, default_value=[],
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='defending_pokemon_id', full_name='POGOProtos.Networking.Requests.Messages.StartGymBattleMessage.defending_pokemon_id', index=2,
-      number=3, type=4, cpp_type=4, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='player_latitude', full_name='POGOProtos.Networking.Requests.Messages.StartGymBattleMessage.player_latitude', index=3,
-      number=4, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='player_longitude', full_name='POGOProtos.Networking.Requests.Messages.StartGymBattleMessage.player_longitude', index=4,
-      number=5, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
   ],
   extensions=[
   ],
@@ -1713,22 +1908,22 @@ _STARTGYMBATTLEMESSAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3526,
-  serialized_end=3677,
+  serialized_start=4178,
+  serialized_end=4224,
 )
 
 
-_UPGRADEPOKEMONMESSAGE = _descriptor.Descriptor(
-  name='UpgradePokemonMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.UpgradePokemonMessage',
+_CLAIMCODENAMEMESSAGE = _descriptor.Descriptor(
+  name='ClaimCodenameMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.ClaimCodenameMessage',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='pokemon_id', full_name='POGOProtos.Networking.Requests.Messages.UpgradePokemonMessage.pokemon_id', index=0,
-      number=1, type=4, cpp_type=4, label=1,
-      has_default_value=False, default_value=0,
+      name='codename', full_name='POGOProtos.Networking.Requests.Messages.ClaimCodenameMessage.codename', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -1744,22 +1939,22 @@ _UPGRADEPOKEMONMESSAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3679,
-  serialized_end=3722,
+  serialized_start=4226,
+  serialized_end=4266,
 )
 
 
-_USEINCENSEMESSAGE = _descriptor.Descriptor(
-  name='UseIncenseMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.UseIncenseMessage',
+_SETCONTACTSETTINGSMESSAGE = _descriptor.Descriptor(
+  name='SetContactSettingsMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.SetContactSettingsMessage',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='incense_type', full_name='POGOProtos.Networking.Requests.Messages.UseIncenseMessage.incense_type', index=0,
-      number=1, type=14, cpp_type=8, label=1,
-      has_default_value=False, default_value=0,
+      name='contact_settings', full_name='POGOProtos.Networking.Requests.Messages.SetContactSettingsMessage.contact_settings', index=0,
+      number=1, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -1775,8 +1970,8 @@ _USEINCENSEMESSAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3724,
-  serialized_end=3795,
+  serialized_start=4268,
+  serialized_end=4362,
 )
 
 
@@ -1820,118 +2015,49 @@ _USEITEMCAPTUREMESSAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3797,
-  serialized_end=3915,
+  serialized_start=4364,
+  serialized_end=4487,
 )
 
 
-_USEITEMEGGINCUBATORMESSAGE = _descriptor.Descriptor(
-  name='UseItemEggIncubatorMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.UseItemEggIncubatorMessage',
+_GETASSETDIGESTMESSAGE = _descriptor.Descriptor(
+  name='GetAssetDigestMessage',
+  full_name='POGOProtos.Networking.Requests.Messages.GetAssetDigestMessage',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='item_id', full_name='POGOProtos.Networking.Requests.Messages.UseItemEggIncubatorMessage.item_id', index=0,
-      number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='pokemon_id', full_name='POGOProtos.Networking.Requests.Messages.UseItemEggIncubatorMessage.pokemon_id', index=1,
-      number=2, type=4, cpp_type=4, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=3917,
-  serialized_end=3982,
-)
-
-
-_USEITEMGYMMESSAGE = _descriptor.Descriptor(
-  name='UseItemGymMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.UseItemGymMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='item_id', full_name='POGOProtos.Networking.Requests.Messages.UseItemGymMessage.item_id', index=0,
+      name='platform', full_name='POGOProtos.Networking.Requests.Messages.GetAssetDigestMessage.platform', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='gym_id', full_name='POGOProtos.Networking.Requests.Messages.UseItemGymMessage.gym_id', index=1,
+      name='device_manufacturer', full_name='POGOProtos.Networking.Requests.Messages.GetAssetDigestMessage.device_manufacturer', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='player_latitude', full_name='POGOProtos.Networking.Requests.Messages.UseItemGymMessage.player_latitude', index=2,
-      number=3, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      name='device_model', full_name='POGOProtos.Networking.Requests.Messages.GetAssetDigestMessage.device_model', index=2,
+      number=3, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='player_longitude', full_name='POGOProtos.Networking.Requests.Messages.UseItemGymMessage.player_longitude', index=3,
-      number=4, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=3985,
-  serialized_end=4118,
-)
-
-
-_USEITEMPOTIONMESSAGE = _descriptor.Descriptor(
-  name='UseItemPotionMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.UseItemPotionMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='item_id', full_name='POGOProtos.Networking.Requests.Messages.UseItemPotionMessage.item_id', index=0,
-      number=1, type=14, cpp_type=8, label=1,
-      has_default_value=False, default_value=0,
+      name='locale', full_name='POGOProtos.Networking.Requests.Messages.GetAssetDigestMessage.locale', index=3,
+      number=4, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='pokemon_id', full_name='POGOProtos.Networking.Requests.Messages.UseItemPotionMessage.pokemon_id', index=1,
-      number=2, type=4, cpp_type=4, label=1,
+      name='app_version', full_name='POGOProtos.Networking.Requests.Messages.GetAssetDigestMessage.app_version', index=4,
+      number=5, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -1948,188 +2074,88 @@ _USEITEMPOTIONMESSAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4120,
-  serialized_end=4209,
+  serialized_start=4490,
+  serialized_end=4647,
 )
 
-
-_USEITEMREVIVEMESSAGE = _descriptor.Descriptor(
-  name='UseItemReviveMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.UseItemReviveMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='item_id', full_name='POGOProtos.Networking.Requests.Messages.UseItemReviveMessage.item_id', index=0,
-      number=1, type=14, cpp_type=8, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='pokemon_id', full_name='POGOProtos.Networking.Requests.Messages.UseItemReviveMessage.pokemon_id', index=1,
-      number=2, type=4, cpp_type=4, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=4211,
-  serialized_end=4300,
-)
-
-
-_USEITEMXPBOOSTMESSAGE = _descriptor.Descriptor(
-  name='UseItemXpBoostMessage',
-  full_name='POGOProtos.Networking.Requests.Messages.UseItemXpBoostMessage',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='item_id', full_name='POGOProtos.Networking.Requests.Messages.UseItemXpBoostMessage.item_id', index=0,
-      number=1, type=14, cpp_type=8, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=4302,
-  serialized_end=4372,
-)
-
-_ADDFORTMODIFIERMESSAGE.fields_by_name['modifier_type'].enum_type = POGOProtos_dot_Inventory__pb2._ITEMID
+_RECYCLEINVENTORYITEMMESSAGE.fields_by_name['item_id'].enum_type = POGOProtos_dot_Inventory_dot_Item__pb2._ITEMID
+_CATCHPOKEMONMESSAGE.fields_by_name['pokeball'].enum_type = POGOProtos_dot_Inventory_dot_Item__pb2._ITEMID
+_ENCOUNTERTUTORIALCOMPLETEMESSAGE.fields_by_name['pokemon_id'].enum_type = POGOProtos_dot_Enums__pb2._POKEMONID
+_DOWNLOADREMOTECONFIGVERSIONMESSAGE.fields_by_name['platform'].enum_type = POGOProtos_dot_Enums__pb2._PLATFORM
+_USEITEMREVIVEMESSAGE.fields_by_name['item_id'].enum_type = POGOProtos_dot_Inventory_dot_Item__pb2._ITEMID
+_USEITEMGYMMESSAGE.fields_by_name['item_id'].enum_type = POGOProtos_dot_Inventory_dot_Item__pb2._ITEMID
+_ADDFORTMODIFIERMESSAGE.fields_by_name['modifier_type'].enum_type = POGOProtos_dot_Inventory_dot_Item__pb2._ITEMID
+_EQUIPBADGEMESSAGE.fields_by_name['badge_type'].enum_type = POGOProtos_dot_Enums__pb2._BADGETYPE
+_USEINCENSEMESSAGE.fields_by_name['incense_type'].enum_type = POGOProtos_dot_Inventory_dot_Item__pb2._ITEMID
+_USEITEMXPBOOSTMESSAGE.fields_by_name['item_id'].enum_type = POGOProtos_dot_Inventory_dot_Item__pb2._ITEMID
+_SETAVATARMESSAGE.fields_by_name['player_avatar'].message_type = POGOProtos_dot_Data_dot_Player__pb2._PLAYERAVATAR
 _ATTACKGYMMESSAGE.fields_by_name['attack_actions'].message_type = POGOProtos_dot_Data_dot_Battle__pb2._BATTLEACTION
 _ATTACKGYMMESSAGE.fields_by_name['last_retrieved_actions'].message_type = POGOProtos_dot_Data_dot_Battle__pb2._BATTLEACTION
-_DOWNLOADREMOTECONFIGVERSIONMESSAGE.fields_by_name['platform'].enum_type = POGOProtos_dot_Enums__pb2._PLATFORM
-_ENCOUNTERTUTORIALCOMPLETEMESSAGE.fields_by_name['pokemon_id'].enum_type = POGOProtos_dot_Enums__pb2._POKEMONID
-_EQUIPBADGEMESSAGE.fields_by_name['badge_type'].enum_type = POGOProtos_dot_Enums__pb2._BADGETYPE
-_GETASSETDIGESTMESSAGE.fields_by_name['platform'].enum_type = POGOProtos_dot_Enums__pb2._PLATFORM
-_RECYCLEINVENTORYITEMMESSAGE.fields_by_name['item_id'].enum_type = POGOProtos_dot_Inventory__pb2._ITEMID
-_SETAVATARMESSAGE.fields_by_name['player_avatar'].message_type = POGOProtos_dot_Data_dot_Player__pb2._PLAYERAVATAR
-_SETCONTACTSETTINGSMESSAGE.fields_by_name['contact_settings'].message_type = POGOProtos_dot_Data_dot_Player__pb2._CONTACTSETTINGS
+_MARKTUTORIALCOMPLETEMESSAGE.fields_by_name['tutorials_completed'].enum_type = POGOProtos_dot_Enums__pb2._TUTORIALSTATE
+_USEITEMPOTIONMESSAGE.fields_by_name['item_id'].enum_type = POGOProtos_dot_Inventory_dot_Item__pb2._ITEMID
 _SETPLAYERTEAMMESSAGE.fields_by_name['team'].enum_type = POGOProtos_dot_Enums__pb2._TEAMCOLOR
-_USEINCENSEMESSAGE.fields_by_name['incense_type'].enum_type = POGOProtos_dot_Inventory__pb2._ITEMID
-_USEITEMCAPTUREMESSAGE.fields_by_name['item_id'].enum_type = POGOProtos_dot_Inventory__pb2._ITEMID
-_USEITEMGYMMESSAGE.fields_by_name['item_id'].enum_type = POGOProtos_dot_Inventory__pb2._ITEMID
-_USEITEMPOTIONMESSAGE.fields_by_name['item_id'].enum_type = POGOProtos_dot_Inventory__pb2._ITEMID
-_USEITEMREVIVEMESSAGE.fields_by_name['item_id'].enum_type = POGOProtos_dot_Inventory__pb2._ITEMID
-_USEITEMXPBOOSTMESSAGE.fields_by_name['item_id'].enum_type = POGOProtos_dot_Inventory__pb2._ITEMID
-DESCRIPTOR.message_types_by_name['AddFortModifierMessage'] = _ADDFORTMODIFIERMESSAGE
-DESCRIPTOR.message_types_by_name['AttackGymMessage'] = _ATTACKGYMMESSAGE
-DESCRIPTOR.message_types_by_name['CatchPokemonMessage'] = _CATCHPOKEMONMESSAGE
-DESCRIPTOR.message_types_by_name['CheckAwardedBadgesMessage'] = _CHECKAWARDEDBADGESMESSAGE
-DESCRIPTOR.message_types_by_name['CheckCodenameAvailableMessage'] = _CHECKCODENAMEAVAILABLEMESSAGE
-DESCRIPTOR.message_types_by_name['ClaimCodenameMessage'] = _CLAIMCODENAMEMESSAGE
+_SETCONTACTSETTINGSMESSAGE.fields_by_name['contact_settings'].message_type = POGOProtos_dot_Data_dot_Player__pb2._CONTACTSETTINGS
+_USEITEMCAPTUREMESSAGE.fields_by_name['item_id'].enum_type = POGOProtos_dot_Inventory_dot_Item__pb2._ITEMID
+_GETASSETDIGESTMESSAGE.fields_by_name['platform'].enum_type = POGOProtos_dot_Enums__pb2._PLATFORM
+DESCRIPTOR.message_types_by_name['StartGymBattleMessage'] = _STARTGYMBATTLEMESSAGE
 DESCRIPTOR.message_types_by_name['CollectDailyBonusMessage'] = _COLLECTDAILYBONUSMESSAGE
-DESCRIPTOR.message_types_by_name['CollectDailyDefenderBonusMessage'] = _COLLECTDAILYDEFENDERBONUSMESSAGE
-DESCRIPTOR.message_types_by_name['DiskEncounterMessage'] = _DISKENCOUNTERMESSAGE
-DESCRIPTOR.message_types_by_name['DownloadItemTemplatesMessage'] = _DOWNLOADITEMTEMPLATESMESSAGE
+DESCRIPTOR.message_types_by_name['NicknamePokemonMessage'] = _NICKNAMEPOKEMONMESSAGE
+DESCRIPTOR.message_types_by_name['GetSuggestedCodenamesMessage'] = _GETSUGGESTEDCODENAMESMESSAGE
+DESCRIPTOR.message_types_by_name['RecycleInventoryItemMessage'] = _RECYCLEINVENTORYITEMMESSAGE
+DESCRIPTOR.message_types_by_name['CheckAwardedBadgesMessage'] = _CHECKAWARDEDBADGESMESSAGE
+DESCRIPTOR.message_types_by_name['LevelUpRewardsMessage'] = _LEVELUPREWARDSMESSAGE
+DESCRIPTOR.message_types_by_name['CatchPokemonMessage'] = _CATCHPOKEMONMESSAGE
+DESCRIPTOR.message_types_by_name['UpgradePokemonMessage'] = _UPGRADEPOKEMONMESSAGE
+DESCRIPTOR.message_types_by_name['EncounterTutorialCompleteMessage'] = _ENCOUNTERTUTORIALCOMPLETEMESSAGE
 DESCRIPTOR.message_types_by_name['DownloadRemoteConfigVersionMessage'] = _DOWNLOADREMOTECONFIGVERSIONMESSAGE
+DESCRIPTOR.message_types_by_name['UseItemReviveMessage'] = _USEITEMREVIVEMESSAGE
+DESCRIPTOR.message_types_by_name['FortDetailsMessage'] = _FORTDETAILSMESSAGE
+DESCRIPTOR.message_types_by_name['FortSearchMessage'] = _FORTSEARCHMESSAGE
+DESCRIPTOR.message_types_by_name['UseItemGymMessage'] = _USEITEMGYMMESSAGE
+DESCRIPTOR.message_types_by_name['GetInventoryMessage'] = _GETINVENTORYMESSAGE
+DESCRIPTOR.message_types_by_name['ReleasePokemonMessage'] = _RELEASEPOKEMONMESSAGE
+DESCRIPTOR.message_types_by_name['SfidaActionLogMessage'] = _SFIDAACTIONLOGMESSAGE
+DESCRIPTOR.message_types_by_name['FortDeployPokemonMessage'] = _FORTDEPLOYPOKEMONMESSAGE
+DESCRIPTOR.message_types_by_name['GetDownloadUrlsMessage'] = _GETDOWNLOADURLSMESSAGE
+DESCRIPTOR.message_types_by_name['AddFortModifierMessage'] = _ADDFORTMODIFIERMESSAGE
+DESCRIPTOR.message_types_by_name['EvolvePokemonMessage'] = _EVOLVEPOKEMONMESSAGE
+DESCRIPTOR.message_types_by_name['DownloadItemTemplatesMessage'] = _DOWNLOADITEMTEMPLATESMESSAGE
+DESCRIPTOR.message_types_by_name['EncounterMessage'] = _ENCOUNTERMESSAGE
+DESCRIPTOR.message_types_by_name['PlayerUpdateMessage'] = _PLAYERUPDATEMESSAGE
+DESCRIPTOR.message_types_by_name['EquipBadgeMessage'] = _EQUIPBADGEMESSAGE
+DESCRIPTOR.message_types_by_name['CheckCodenameAvailableMessage'] = _CHECKCODENAMEAVAILABLEMESSAGE
+DESCRIPTOR.message_types_by_name['UseItemEggIncubatorMessage'] = _USEITEMEGGINCUBATORMESSAGE
+DESCRIPTOR.message_types_by_name['UseIncenseMessage'] = _USEINCENSEMESSAGE
+DESCRIPTOR.message_types_by_name['CollectDailyDefenderBonusMessage'] = _COLLECTDAILYDEFENDERBONUSMESSAGE
+DESCRIPTOR.message_types_by_name['UseItemXpBoostMessage'] = _USEITEMXPBOOSTMESSAGE
+DESCRIPTOR.message_types_by_name['SetAvatarMessage'] = _SETAVATARMESSAGE
+DESCRIPTOR.message_types_by_name['AttackGymMessage'] = _ATTACKGYMMESSAGE
+DESCRIPTOR.message_types_by_name['GetGymDetailsMessage'] = _GETGYMDETAILSMESSAGE
 DESCRIPTOR.message_types_by_name['DownloadSettingsMessage'] = _DOWNLOADSETTINGSMESSAGE
 DESCRIPTOR.message_types_by_name['EchoMessage'] = _ECHOMESSAGE
-DESCRIPTOR.message_types_by_name['EncounterMessage'] = _ENCOUNTERMESSAGE
-DESCRIPTOR.message_types_by_name['EncounterTutorialCompleteMessage'] = _ENCOUNTERTUTORIALCOMPLETEMESSAGE
-DESCRIPTOR.message_types_by_name['EquipBadgeMessage'] = _EQUIPBADGEMESSAGE
-DESCRIPTOR.message_types_by_name['EvolvePokemonMessage'] = _EVOLVEPOKEMONMESSAGE
-DESCRIPTOR.message_types_by_name['FortDeployProto'] = _FORTDEPLOYPROTO
-DESCRIPTOR.message_types_by_name['FortDetailsMessage'] = _FORTDETAILSMESSAGE
+DESCRIPTOR.message_types_by_name['SetFavoritePokemonMessage'] = _SETFAVORITEPOKEMONMESSAGE
+DESCRIPTOR.message_types_by_name['MarkTutorialCompleteMessage'] = _MARKTUTORIALCOMPLETEMESSAGE
+DESCRIPTOR.message_types_by_name['IncenseEncounterMessage'] = _INCENSEENCOUNTERMESSAGE
+DESCRIPTOR.message_types_by_name['GetPlayerMessage'] = _GETPLAYERMESSAGE
+DESCRIPTOR.message_types_by_name['GetMapObjectsMessage'] = _GETMAPOBJECTSMESSAGE
+DESCRIPTOR.message_types_by_name['DiskEncounterMessage'] = _DISKENCOUNTERMESSAGE
+DESCRIPTOR.message_types_by_name['UseItemPotionMessage'] = _USEITEMPOTIONMESSAGE
 DESCRIPTOR.message_types_by_name['FortRecallPokemonMessage'] = _FORTRECALLPOKEMONMESSAGE
-DESCRIPTOR.message_types_by_name['FortSearchMessage'] = _FORTSEARCHMESSAGE
-DESCRIPTOR.message_types_by_name['GetAssetDigestMessage'] = _GETASSETDIGESTMESSAGE
-DESCRIPTOR.message_types_by_name['GetDownloadUrlsMessage'] = _GETDOWNLOADURLSMESSAGE
-DESCRIPTOR.message_types_by_name['GetGymDetailsMessage'] = _GETGYMDETAILSMESSAGE
+DESCRIPTOR.message_types_by_name['SetPlayerTeamMessage'] = _SETPLAYERTEAMMESSAGE
 DESCRIPTOR.message_types_by_name['GetHatchedEggsMessage'] = _GETHATCHEDEGGSMESSAGE
 DESCRIPTOR.message_types_by_name['GetIncensePokemonMessage'] = _GETINCENSEPOKEMONMESSAGE
-DESCRIPTOR.message_types_by_name['GetInventoryMessage'] = _GETINVENTORYMESSAGE
-DESCRIPTOR.message_types_by_name['GetMapObjectsMessage'] = _GETMAPOBJECTSMESSAGE
-DESCRIPTOR.message_types_by_name['GetPlayerMessage'] = _GETPLAYERMESSAGE
 DESCRIPTOR.message_types_by_name['GetPlayerProfileMessage'] = _GETPLAYERPROFILEMESSAGE
-DESCRIPTOR.message_types_by_name['GetSuggestedCodenamesMessage'] = _GETSUGGESTEDCODENAMESMESSAGE
-DESCRIPTOR.message_types_by_name['IncenseEncounterMessage'] = _INCENSEENCOUNTERMESSAGE
-DESCRIPTOR.message_types_by_name['LevelUpRewardsMessage'] = _LEVELUPREWARDSMESSAGE
-DESCRIPTOR.message_types_by_name['NicknamePokemonMessage'] = _NICKNAMEPOKEMONMESSAGE
-DESCRIPTOR.message_types_by_name['PlayerUpdateMessage'] = _PLAYERUPDATEMESSAGE
-DESCRIPTOR.message_types_by_name['RecycleInventoryItemMessage'] = _RECYCLEINVENTORYITEMMESSAGE
-DESCRIPTOR.message_types_by_name['ReleasePokemonMessage'] = _RELEASEPOKEMONMESSAGE
-DESCRIPTOR.message_types_by_name['SetAvatarMessage'] = _SETAVATARMESSAGE
+DESCRIPTOR.message_types_by_name['ClaimCodenameMessage'] = _CLAIMCODENAMEMESSAGE
 DESCRIPTOR.message_types_by_name['SetContactSettingsMessage'] = _SETCONTACTSETTINGSMESSAGE
-DESCRIPTOR.message_types_by_name['SetFavoritePokemonMessage'] = _SETFAVORITEPOKEMONMESSAGE
-DESCRIPTOR.message_types_by_name['SetPlayerTeamMessage'] = _SETPLAYERTEAMMESSAGE
-DESCRIPTOR.message_types_by_name['StartGymBattleMessage'] = _STARTGYMBATTLEMESSAGE
-DESCRIPTOR.message_types_by_name['UpgradePokemonMessage'] = _UPGRADEPOKEMONMESSAGE
-DESCRIPTOR.message_types_by_name['UseIncenseMessage'] = _USEINCENSEMESSAGE
 DESCRIPTOR.message_types_by_name['UseItemCaptureMessage'] = _USEITEMCAPTUREMESSAGE
-DESCRIPTOR.message_types_by_name['UseItemEggIncubatorMessage'] = _USEITEMEGGINCUBATORMESSAGE
-DESCRIPTOR.message_types_by_name['UseItemGymMessage'] = _USEITEMGYMMESSAGE
-DESCRIPTOR.message_types_by_name['UseItemPotionMessage'] = _USEITEMPOTIONMESSAGE
-DESCRIPTOR.message_types_by_name['UseItemReviveMessage'] = _USEITEMREVIVEMESSAGE
-DESCRIPTOR.message_types_by_name['UseItemXpBoostMessage'] = _USEITEMXPBOOSTMESSAGE
+DESCRIPTOR.message_types_by_name['GetAssetDigestMessage'] = _GETASSETDIGESTMESSAGE
 
-AddFortModifierMessage = _reflection.GeneratedProtocolMessageType('AddFortModifierMessage', (_message.Message,), dict(
-  DESCRIPTOR = _ADDFORTMODIFIERMESSAGE,
+StartGymBattleMessage = _reflection.GeneratedProtocolMessageType('StartGymBattleMessage', (_message.Message,), dict(
+  DESCRIPTOR = _STARTGYMBATTLEMESSAGE,
   __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.AddFortModifierMessage)
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.StartGymBattleMessage)
   ))
-_sym_db.RegisterMessage(AddFortModifierMessage)
-
-AttackGymMessage = _reflection.GeneratedProtocolMessageType('AttackGymMessage', (_message.Message,), dict(
-  DESCRIPTOR = _ATTACKGYMMESSAGE,
-  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.AttackGymMessage)
-  ))
-_sym_db.RegisterMessage(AttackGymMessage)
-
-CatchPokemonMessage = _reflection.GeneratedProtocolMessageType('CatchPokemonMessage', (_message.Message,), dict(
-  DESCRIPTOR = _CATCHPOKEMONMESSAGE,
-  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.CatchPokemonMessage)
-  ))
-_sym_db.RegisterMessage(CatchPokemonMessage)
-
-CheckAwardedBadgesMessage = _reflection.GeneratedProtocolMessageType('CheckAwardedBadgesMessage', (_message.Message,), dict(
-  DESCRIPTOR = _CHECKAWARDEDBADGESMESSAGE,
-  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.CheckAwardedBadgesMessage)
-  ))
-_sym_db.RegisterMessage(CheckAwardedBadgesMessage)
-
-CheckCodenameAvailableMessage = _reflection.GeneratedProtocolMessageType('CheckCodenameAvailableMessage', (_message.Message,), dict(
-  DESCRIPTOR = _CHECKCODENAMEAVAILABLEMESSAGE,
-  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.CheckCodenameAvailableMessage)
-  ))
-_sym_db.RegisterMessage(CheckCodenameAvailableMessage)
-
-ClaimCodenameMessage = _reflection.GeneratedProtocolMessageType('ClaimCodenameMessage', (_message.Message,), dict(
-  DESCRIPTOR = _CLAIMCODENAMEMESSAGE,
-  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.ClaimCodenameMessage)
-  ))
-_sym_db.RegisterMessage(ClaimCodenameMessage)
+_sym_db.RegisterMessage(StartGymBattleMessage)
 
 CollectDailyBonusMessage = _reflection.GeneratedProtocolMessageType('CollectDailyBonusMessage', (_message.Message,), dict(
   DESCRIPTOR = _COLLECTDAILYBONUSMESSAGE,
@@ -2138,19 +2164,145 @@ CollectDailyBonusMessage = _reflection.GeneratedProtocolMessageType('CollectDail
   ))
 _sym_db.RegisterMessage(CollectDailyBonusMessage)
 
-CollectDailyDefenderBonusMessage = _reflection.GeneratedProtocolMessageType('CollectDailyDefenderBonusMessage', (_message.Message,), dict(
-  DESCRIPTOR = _COLLECTDAILYDEFENDERBONUSMESSAGE,
+NicknamePokemonMessage = _reflection.GeneratedProtocolMessageType('NicknamePokemonMessage', (_message.Message,), dict(
+  DESCRIPTOR = _NICKNAMEPOKEMONMESSAGE,
   __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.CollectDailyDefenderBonusMessage)
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.NicknamePokemonMessage)
   ))
-_sym_db.RegisterMessage(CollectDailyDefenderBonusMessage)
+_sym_db.RegisterMessage(NicknamePokemonMessage)
 
-DiskEncounterMessage = _reflection.GeneratedProtocolMessageType('DiskEncounterMessage', (_message.Message,), dict(
-  DESCRIPTOR = _DISKENCOUNTERMESSAGE,
+GetSuggestedCodenamesMessage = _reflection.GeneratedProtocolMessageType('GetSuggestedCodenamesMessage', (_message.Message,), dict(
+  DESCRIPTOR = _GETSUGGESTEDCODENAMESMESSAGE,
   __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.DiskEncounterMessage)
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.GetSuggestedCodenamesMessage)
   ))
-_sym_db.RegisterMessage(DiskEncounterMessage)
+_sym_db.RegisterMessage(GetSuggestedCodenamesMessage)
+
+RecycleInventoryItemMessage = _reflection.GeneratedProtocolMessageType('RecycleInventoryItemMessage', (_message.Message,), dict(
+  DESCRIPTOR = _RECYCLEINVENTORYITEMMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.RecycleInventoryItemMessage)
+  ))
+_sym_db.RegisterMessage(RecycleInventoryItemMessage)
+
+CheckAwardedBadgesMessage = _reflection.GeneratedProtocolMessageType('CheckAwardedBadgesMessage', (_message.Message,), dict(
+  DESCRIPTOR = _CHECKAWARDEDBADGESMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.CheckAwardedBadgesMessage)
+  ))
+_sym_db.RegisterMessage(CheckAwardedBadgesMessage)
+
+LevelUpRewardsMessage = _reflection.GeneratedProtocolMessageType('LevelUpRewardsMessage', (_message.Message,), dict(
+  DESCRIPTOR = _LEVELUPREWARDSMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.LevelUpRewardsMessage)
+  ))
+_sym_db.RegisterMessage(LevelUpRewardsMessage)
+
+CatchPokemonMessage = _reflection.GeneratedProtocolMessageType('CatchPokemonMessage', (_message.Message,), dict(
+  DESCRIPTOR = _CATCHPOKEMONMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.CatchPokemonMessage)
+  ))
+_sym_db.RegisterMessage(CatchPokemonMessage)
+
+UpgradePokemonMessage = _reflection.GeneratedProtocolMessageType('UpgradePokemonMessage', (_message.Message,), dict(
+  DESCRIPTOR = _UPGRADEPOKEMONMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.UpgradePokemonMessage)
+  ))
+_sym_db.RegisterMessage(UpgradePokemonMessage)
+
+EncounterTutorialCompleteMessage = _reflection.GeneratedProtocolMessageType('EncounterTutorialCompleteMessage', (_message.Message,), dict(
+  DESCRIPTOR = _ENCOUNTERTUTORIALCOMPLETEMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.EncounterTutorialCompleteMessage)
+  ))
+_sym_db.RegisterMessage(EncounterTutorialCompleteMessage)
+
+DownloadRemoteConfigVersionMessage = _reflection.GeneratedProtocolMessageType('DownloadRemoteConfigVersionMessage', (_message.Message,), dict(
+  DESCRIPTOR = _DOWNLOADREMOTECONFIGVERSIONMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.DownloadRemoteConfigVersionMessage)
+  ))
+_sym_db.RegisterMessage(DownloadRemoteConfigVersionMessage)
+
+UseItemReviveMessage = _reflection.GeneratedProtocolMessageType('UseItemReviveMessage', (_message.Message,), dict(
+  DESCRIPTOR = _USEITEMREVIVEMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.UseItemReviveMessage)
+  ))
+_sym_db.RegisterMessage(UseItemReviveMessage)
+
+FortDetailsMessage = _reflection.GeneratedProtocolMessageType('FortDetailsMessage', (_message.Message,), dict(
+  DESCRIPTOR = _FORTDETAILSMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.FortDetailsMessage)
+  ))
+_sym_db.RegisterMessage(FortDetailsMessage)
+
+FortSearchMessage = _reflection.GeneratedProtocolMessageType('FortSearchMessage', (_message.Message,), dict(
+  DESCRIPTOR = _FORTSEARCHMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.FortSearchMessage)
+  ))
+_sym_db.RegisterMessage(FortSearchMessage)
+
+UseItemGymMessage = _reflection.GeneratedProtocolMessageType('UseItemGymMessage', (_message.Message,), dict(
+  DESCRIPTOR = _USEITEMGYMMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.UseItemGymMessage)
+  ))
+_sym_db.RegisterMessage(UseItemGymMessage)
+
+GetInventoryMessage = _reflection.GeneratedProtocolMessageType('GetInventoryMessage', (_message.Message,), dict(
+  DESCRIPTOR = _GETINVENTORYMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.GetInventoryMessage)
+  ))
+_sym_db.RegisterMessage(GetInventoryMessage)
+
+ReleasePokemonMessage = _reflection.GeneratedProtocolMessageType('ReleasePokemonMessage', (_message.Message,), dict(
+  DESCRIPTOR = _RELEASEPOKEMONMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.ReleasePokemonMessage)
+  ))
+_sym_db.RegisterMessage(ReleasePokemonMessage)
+
+SfidaActionLogMessage = _reflection.GeneratedProtocolMessageType('SfidaActionLogMessage', (_message.Message,), dict(
+  DESCRIPTOR = _SFIDAACTIONLOGMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.SfidaActionLogMessage)
+  ))
+_sym_db.RegisterMessage(SfidaActionLogMessage)
+
+FortDeployPokemonMessage = _reflection.GeneratedProtocolMessageType('FortDeployPokemonMessage', (_message.Message,), dict(
+  DESCRIPTOR = _FORTDEPLOYPOKEMONMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.FortDeployPokemonMessage)
+  ))
+_sym_db.RegisterMessage(FortDeployPokemonMessage)
+
+GetDownloadUrlsMessage = _reflection.GeneratedProtocolMessageType('GetDownloadUrlsMessage', (_message.Message,), dict(
+  DESCRIPTOR = _GETDOWNLOADURLSMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.GetDownloadUrlsMessage)
+  ))
+_sym_db.RegisterMessage(GetDownloadUrlsMessage)
+
+AddFortModifierMessage = _reflection.GeneratedProtocolMessageType('AddFortModifierMessage', (_message.Message,), dict(
+  DESCRIPTOR = _ADDFORTMODIFIERMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.AddFortModifierMessage)
+  ))
+_sym_db.RegisterMessage(AddFortModifierMessage)
+
+EvolvePokemonMessage = _reflection.GeneratedProtocolMessageType('EvolvePokemonMessage', (_message.Message,), dict(
+  DESCRIPTOR = _EVOLVEPOKEMONMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.EvolvePokemonMessage)
+  ))
+_sym_db.RegisterMessage(EvolvePokemonMessage)
 
 DownloadItemTemplatesMessage = _reflection.GeneratedProtocolMessageType('DownloadItemTemplatesMessage', (_message.Message,), dict(
   DESCRIPTOR = _DOWNLOADITEMTEMPLATESMESSAGE,
@@ -2159,12 +2311,82 @@ DownloadItemTemplatesMessage = _reflection.GeneratedProtocolMessageType('Downloa
   ))
 _sym_db.RegisterMessage(DownloadItemTemplatesMessage)
 
-DownloadRemoteConfigVersionMessage = _reflection.GeneratedProtocolMessageType('DownloadRemoteConfigVersionMessage', (_message.Message,), dict(
-  DESCRIPTOR = _DOWNLOADREMOTECONFIGVERSIONMESSAGE,
+EncounterMessage = _reflection.GeneratedProtocolMessageType('EncounterMessage', (_message.Message,), dict(
+  DESCRIPTOR = _ENCOUNTERMESSAGE,
   __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.DownloadRemoteConfigVersionMessage)
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.EncounterMessage)
   ))
-_sym_db.RegisterMessage(DownloadRemoteConfigVersionMessage)
+_sym_db.RegisterMessage(EncounterMessage)
+
+PlayerUpdateMessage = _reflection.GeneratedProtocolMessageType('PlayerUpdateMessage', (_message.Message,), dict(
+  DESCRIPTOR = _PLAYERUPDATEMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.PlayerUpdateMessage)
+  ))
+_sym_db.RegisterMessage(PlayerUpdateMessage)
+
+EquipBadgeMessage = _reflection.GeneratedProtocolMessageType('EquipBadgeMessage', (_message.Message,), dict(
+  DESCRIPTOR = _EQUIPBADGEMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.EquipBadgeMessage)
+  ))
+_sym_db.RegisterMessage(EquipBadgeMessage)
+
+CheckCodenameAvailableMessage = _reflection.GeneratedProtocolMessageType('CheckCodenameAvailableMessage', (_message.Message,), dict(
+  DESCRIPTOR = _CHECKCODENAMEAVAILABLEMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.CheckCodenameAvailableMessage)
+  ))
+_sym_db.RegisterMessage(CheckCodenameAvailableMessage)
+
+UseItemEggIncubatorMessage = _reflection.GeneratedProtocolMessageType('UseItemEggIncubatorMessage', (_message.Message,), dict(
+  DESCRIPTOR = _USEITEMEGGINCUBATORMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.UseItemEggIncubatorMessage)
+  ))
+_sym_db.RegisterMessage(UseItemEggIncubatorMessage)
+
+UseIncenseMessage = _reflection.GeneratedProtocolMessageType('UseIncenseMessage', (_message.Message,), dict(
+  DESCRIPTOR = _USEINCENSEMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.UseIncenseMessage)
+  ))
+_sym_db.RegisterMessage(UseIncenseMessage)
+
+CollectDailyDefenderBonusMessage = _reflection.GeneratedProtocolMessageType('CollectDailyDefenderBonusMessage', (_message.Message,), dict(
+  DESCRIPTOR = _COLLECTDAILYDEFENDERBONUSMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.CollectDailyDefenderBonusMessage)
+  ))
+_sym_db.RegisterMessage(CollectDailyDefenderBonusMessage)
+
+UseItemXpBoostMessage = _reflection.GeneratedProtocolMessageType('UseItemXpBoostMessage', (_message.Message,), dict(
+  DESCRIPTOR = _USEITEMXPBOOSTMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.UseItemXpBoostMessage)
+  ))
+_sym_db.RegisterMessage(UseItemXpBoostMessage)
+
+SetAvatarMessage = _reflection.GeneratedProtocolMessageType('SetAvatarMessage', (_message.Message,), dict(
+  DESCRIPTOR = _SETAVATARMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.SetAvatarMessage)
+  ))
+_sym_db.RegisterMessage(SetAvatarMessage)
+
+AttackGymMessage = _reflection.GeneratedProtocolMessageType('AttackGymMessage', (_message.Message,), dict(
+  DESCRIPTOR = _ATTACKGYMMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.AttackGymMessage)
+  ))
+_sym_db.RegisterMessage(AttackGymMessage)
+
+GetGymDetailsMessage = _reflection.GeneratedProtocolMessageType('GetGymDetailsMessage', (_message.Message,), dict(
+  DESCRIPTOR = _GETGYMDETAILSMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.GetGymDetailsMessage)
+  ))
+_sym_db.RegisterMessage(GetGymDetailsMessage)
 
 DownloadSettingsMessage = _reflection.GeneratedProtocolMessageType('DownloadSettingsMessage', (_message.Message,), dict(
   DESCRIPTOR = _DOWNLOADSETTINGSMESSAGE,
@@ -2180,47 +2402,54 @@ EchoMessage = _reflection.GeneratedProtocolMessageType('EchoMessage', (_message.
   ))
 _sym_db.RegisterMessage(EchoMessage)
 
-EncounterMessage = _reflection.GeneratedProtocolMessageType('EncounterMessage', (_message.Message,), dict(
-  DESCRIPTOR = _ENCOUNTERMESSAGE,
+SetFavoritePokemonMessage = _reflection.GeneratedProtocolMessageType('SetFavoritePokemonMessage', (_message.Message,), dict(
+  DESCRIPTOR = _SETFAVORITEPOKEMONMESSAGE,
   __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.EncounterMessage)
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.SetFavoritePokemonMessage)
   ))
-_sym_db.RegisterMessage(EncounterMessage)
+_sym_db.RegisterMessage(SetFavoritePokemonMessage)
 
-EncounterTutorialCompleteMessage = _reflection.GeneratedProtocolMessageType('EncounterTutorialCompleteMessage', (_message.Message,), dict(
-  DESCRIPTOR = _ENCOUNTERTUTORIALCOMPLETEMESSAGE,
+MarkTutorialCompleteMessage = _reflection.GeneratedProtocolMessageType('MarkTutorialCompleteMessage', (_message.Message,), dict(
+  DESCRIPTOR = _MARKTUTORIALCOMPLETEMESSAGE,
   __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.EncounterTutorialCompleteMessage)
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.MarkTutorialCompleteMessage)
   ))
-_sym_db.RegisterMessage(EncounterTutorialCompleteMessage)
+_sym_db.RegisterMessage(MarkTutorialCompleteMessage)
 
-EquipBadgeMessage = _reflection.GeneratedProtocolMessageType('EquipBadgeMessage', (_message.Message,), dict(
-  DESCRIPTOR = _EQUIPBADGEMESSAGE,
+IncenseEncounterMessage = _reflection.GeneratedProtocolMessageType('IncenseEncounterMessage', (_message.Message,), dict(
+  DESCRIPTOR = _INCENSEENCOUNTERMESSAGE,
   __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.EquipBadgeMessage)
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.IncenseEncounterMessage)
   ))
-_sym_db.RegisterMessage(EquipBadgeMessage)
+_sym_db.RegisterMessage(IncenseEncounterMessage)
 
-EvolvePokemonMessage = _reflection.GeneratedProtocolMessageType('EvolvePokemonMessage', (_message.Message,), dict(
-  DESCRIPTOR = _EVOLVEPOKEMONMESSAGE,
+GetPlayerMessage = _reflection.GeneratedProtocolMessageType('GetPlayerMessage', (_message.Message,), dict(
+  DESCRIPTOR = _GETPLAYERMESSAGE,
   __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.EvolvePokemonMessage)
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.GetPlayerMessage)
   ))
-_sym_db.RegisterMessage(EvolvePokemonMessage)
+_sym_db.RegisterMessage(GetPlayerMessage)
 
-FortDeployProto = _reflection.GeneratedProtocolMessageType('FortDeployProto', (_message.Message,), dict(
-  DESCRIPTOR = _FORTDEPLOYPROTO,
+GetMapObjectsMessage = _reflection.GeneratedProtocolMessageType('GetMapObjectsMessage', (_message.Message,), dict(
+  DESCRIPTOR = _GETMAPOBJECTSMESSAGE,
   __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.FortDeployProto)
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.GetMapObjectsMessage)
   ))
-_sym_db.RegisterMessage(FortDeployProto)
+_sym_db.RegisterMessage(GetMapObjectsMessage)
 
-FortDetailsMessage = _reflection.GeneratedProtocolMessageType('FortDetailsMessage', (_message.Message,), dict(
-  DESCRIPTOR = _FORTDETAILSMESSAGE,
+DiskEncounterMessage = _reflection.GeneratedProtocolMessageType('DiskEncounterMessage', (_message.Message,), dict(
+  DESCRIPTOR = _DISKENCOUNTERMESSAGE,
   __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.FortDetailsMessage)
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.DiskEncounterMessage)
   ))
-_sym_db.RegisterMessage(FortDetailsMessage)
+_sym_db.RegisterMessage(DiskEncounterMessage)
+
+UseItemPotionMessage = _reflection.GeneratedProtocolMessageType('UseItemPotionMessage', (_message.Message,), dict(
+  DESCRIPTOR = _USEITEMPOTIONMESSAGE,
+  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.UseItemPotionMessage)
+  ))
+_sym_db.RegisterMessage(UseItemPotionMessage)
 
 FortRecallPokemonMessage = _reflection.GeneratedProtocolMessageType('FortRecallPokemonMessage', (_message.Message,), dict(
   DESCRIPTOR = _FORTRECALLPOKEMONMESSAGE,
@@ -2229,33 +2458,12 @@ FortRecallPokemonMessage = _reflection.GeneratedProtocolMessageType('FortRecallP
   ))
 _sym_db.RegisterMessage(FortRecallPokemonMessage)
 
-FortSearchMessage = _reflection.GeneratedProtocolMessageType('FortSearchMessage', (_message.Message,), dict(
-  DESCRIPTOR = _FORTSEARCHMESSAGE,
+SetPlayerTeamMessage = _reflection.GeneratedProtocolMessageType('SetPlayerTeamMessage', (_message.Message,), dict(
+  DESCRIPTOR = _SETPLAYERTEAMMESSAGE,
   __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.FortSearchMessage)
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.SetPlayerTeamMessage)
   ))
-_sym_db.RegisterMessage(FortSearchMessage)
-
-GetAssetDigestMessage = _reflection.GeneratedProtocolMessageType('GetAssetDigestMessage', (_message.Message,), dict(
-  DESCRIPTOR = _GETASSETDIGESTMESSAGE,
-  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.GetAssetDigestMessage)
-  ))
-_sym_db.RegisterMessage(GetAssetDigestMessage)
-
-GetDownloadUrlsMessage = _reflection.GeneratedProtocolMessageType('GetDownloadUrlsMessage', (_message.Message,), dict(
-  DESCRIPTOR = _GETDOWNLOADURLSMESSAGE,
-  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.GetDownloadUrlsMessage)
-  ))
-_sym_db.RegisterMessage(GetDownloadUrlsMessage)
-
-GetGymDetailsMessage = _reflection.GeneratedProtocolMessageType('GetGymDetailsMessage', (_message.Message,), dict(
-  DESCRIPTOR = _GETGYMDETAILSMESSAGE,
-  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.GetGymDetailsMessage)
-  ))
-_sym_db.RegisterMessage(GetGymDetailsMessage)
+_sym_db.RegisterMessage(SetPlayerTeamMessage)
 
 GetHatchedEggsMessage = _reflection.GeneratedProtocolMessageType('GetHatchedEggsMessage', (_message.Message,), dict(
   DESCRIPTOR = _GETHATCHEDEGGSMESSAGE,
@@ -2271,27 +2479,6 @@ GetIncensePokemonMessage = _reflection.GeneratedProtocolMessageType('GetIncenseP
   ))
 _sym_db.RegisterMessage(GetIncensePokemonMessage)
 
-GetInventoryMessage = _reflection.GeneratedProtocolMessageType('GetInventoryMessage', (_message.Message,), dict(
-  DESCRIPTOR = _GETINVENTORYMESSAGE,
-  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.GetInventoryMessage)
-  ))
-_sym_db.RegisterMessage(GetInventoryMessage)
-
-GetMapObjectsMessage = _reflection.GeneratedProtocolMessageType('GetMapObjectsMessage', (_message.Message,), dict(
-  DESCRIPTOR = _GETMAPOBJECTSMESSAGE,
-  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.GetMapObjectsMessage)
-  ))
-_sym_db.RegisterMessage(GetMapObjectsMessage)
-
-GetPlayerMessage = _reflection.GeneratedProtocolMessageType('GetPlayerMessage', (_message.Message,), dict(
-  DESCRIPTOR = _GETPLAYERMESSAGE,
-  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.GetPlayerMessage)
-  ))
-_sym_db.RegisterMessage(GetPlayerMessage)
-
 GetPlayerProfileMessage = _reflection.GeneratedProtocolMessageType('GetPlayerProfileMessage', (_message.Message,), dict(
   DESCRIPTOR = _GETPLAYERPROFILEMESSAGE,
   __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
@@ -2299,61 +2486,12 @@ GetPlayerProfileMessage = _reflection.GeneratedProtocolMessageType('GetPlayerPro
   ))
 _sym_db.RegisterMessage(GetPlayerProfileMessage)
 
-GetSuggestedCodenamesMessage = _reflection.GeneratedProtocolMessageType('GetSuggestedCodenamesMessage', (_message.Message,), dict(
-  DESCRIPTOR = _GETSUGGESTEDCODENAMESMESSAGE,
+ClaimCodenameMessage = _reflection.GeneratedProtocolMessageType('ClaimCodenameMessage', (_message.Message,), dict(
+  DESCRIPTOR = _CLAIMCODENAMEMESSAGE,
   __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.GetSuggestedCodenamesMessage)
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.ClaimCodenameMessage)
   ))
-_sym_db.RegisterMessage(GetSuggestedCodenamesMessage)
-
-IncenseEncounterMessage = _reflection.GeneratedProtocolMessageType('IncenseEncounterMessage', (_message.Message,), dict(
-  DESCRIPTOR = _INCENSEENCOUNTERMESSAGE,
-  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.IncenseEncounterMessage)
-  ))
-_sym_db.RegisterMessage(IncenseEncounterMessage)
-
-LevelUpRewardsMessage = _reflection.GeneratedProtocolMessageType('LevelUpRewardsMessage', (_message.Message,), dict(
-  DESCRIPTOR = _LEVELUPREWARDSMESSAGE,
-  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.LevelUpRewardsMessage)
-  ))
-_sym_db.RegisterMessage(LevelUpRewardsMessage)
-
-NicknamePokemonMessage = _reflection.GeneratedProtocolMessageType('NicknamePokemonMessage', (_message.Message,), dict(
-  DESCRIPTOR = _NICKNAMEPOKEMONMESSAGE,
-  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.NicknamePokemonMessage)
-  ))
-_sym_db.RegisterMessage(NicknamePokemonMessage)
-
-PlayerUpdateMessage = _reflection.GeneratedProtocolMessageType('PlayerUpdateMessage', (_message.Message,), dict(
-  DESCRIPTOR = _PLAYERUPDATEMESSAGE,
-  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.PlayerUpdateMessage)
-  ))
-_sym_db.RegisterMessage(PlayerUpdateMessage)
-
-RecycleInventoryItemMessage = _reflection.GeneratedProtocolMessageType('RecycleInventoryItemMessage', (_message.Message,), dict(
-  DESCRIPTOR = _RECYCLEINVENTORYITEMMESSAGE,
-  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.RecycleInventoryItemMessage)
-  ))
-_sym_db.RegisterMessage(RecycleInventoryItemMessage)
-
-ReleasePokemonMessage = _reflection.GeneratedProtocolMessageType('ReleasePokemonMessage', (_message.Message,), dict(
-  DESCRIPTOR = _RELEASEPOKEMONMESSAGE,
-  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.ReleasePokemonMessage)
-  ))
-_sym_db.RegisterMessage(ReleasePokemonMessage)
-
-SetAvatarMessage = _reflection.GeneratedProtocolMessageType('SetAvatarMessage', (_message.Message,), dict(
-  DESCRIPTOR = _SETAVATARMESSAGE,
-  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.SetAvatarMessage)
-  ))
-_sym_db.RegisterMessage(SetAvatarMessage)
+_sym_db.RegisterMessage(ClaimCodenameMessage)
 
 SetContactSettingsMessage = _reflection.GeneratedProtocolMessageType('SetContactSettingsMessage', (_message.Message,), dict(
   DESCRIPTOR = _SETCONTACTSETTINGSMESSAGE,
@@ -2362,41 +2500,6 @@ SetContactSettingsMessage = _reflection.GeneratedProtocolMessageType('SetContact
   ))
 _sym_db.RegisterMessage(SetContactSettingsMessage)
 
-SetFavoritePokemonMessage = _reflection.GeneratedProtocolMessageType('SetFavoritePokemonMessage', (_message.Message,), dict(
-  DESCRIPTOR = _SETFAVORITEPOKEMONMESSAGE,
-  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.SetFavoritePokemonMessage)
-  ))
-_sym_db.RegisterMessage(SetFavoritePokemonMessage)
-
-SetPlayerTeamMessage = _reflection.GeneratedProtocolMessageType('SetPlayerTeamMessage', (_message.Message,), dict(
-  DESCRIPTOR = _SETPLAYERTEAMMESSAGE,
-  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.SetPlayerTeamMessage)
-  ))
-_sym_db.RegisterMessage(SetPlayerTeamMessage)
-
-StartGymBattleMessage = _reflection.GeneratedProtocolMessageType('StartGymBattleMessage', (_message.Message,), dict(
-  DESCRIPTOR = _STARTGYMBATTLEMESSAGE,
-  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.StartGymBattleMessage)
-  ))
-_sym_db.RegisterMessage(StartGymBattleMessage)
-
-UpgradePokemonMessage = _reflection.GeneratedProtocolMessageType('UpgradePokemonMessage', (_message.Message,), dict(
-  DESCRIPTOR = _UPGRADEPOKEMONMESSAGE,
-  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.UpgradePokemonMessage)
-  ))
-_sym_db.RegisterMessage(UpgradePokemonMessage)
-
-UseIncenseMessage = _reflection.GeneratedProtocolMessageType('UseIncenseMessage', (_message.Message,), dict(
-  DESCRIPTOR = _USEINCENSEMESSAGE,
-  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.UseIncenseMessage)
-  ))
-_sym_db.RegisterMessage(UseIncenseMessage)
-
 UseItemCaptureMessage = _reflection.GeneratedProtocolMessageType('UseItemCaptureMessage', (_message.Message,), dict(
   DESCRIPTOR = _USEITEMCAPTUREMESSAGE,
   __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
@@ -2404,40 +2507,12 @@ UseItemCaptureMessage = _reflection.GeneratedProtocolMessageType('UseItemCapture
   ))
 _sym_db.RegisterMessage(UseItemCaptureMessage)
 
-UseItemEggIncubatorMessage = _reflection.GeneratedProtocolMessageType('UseItemEggIncubatorMessage', (_message.Message,), dict(
-  DESCRIPTOR = _USEITEMEGGINCUBATORMESSAGE,
+GetAssetDigestMessage = _reflection.GeneratedProtocolMessageType('GetAssetDigestMessage', (_message.Message,), dict(
+  DESCRIPTOR = _GETASSETDIGESTMESSAGE,
   __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.UseItemEggIncubatorMessage)
+  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.GetAssetDigestMessage)
   ))
-_sym_db.RegisterMessage(UseItemEggIncubatorMessage)
-
-UseItemGymMessage = _reflection.GeneratedProtocolMessageType('UseItemGymMessage', (_message.Message,), dict(
-  DESCRIPTOR = _USEITEMGYMMESSAGE,
-  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.UseItemGymMessage)
-  ))
-_sym_db.RegisterMessage(UseItemGymMessage)
-
-UseItemPotionMessage = _reflection.GeneratedProtocolMessageType('UseItemPotionMessage', (_message.Message,), dict(
-  DESCRIPTOR = _USEITEMPOTIONMESSAGE,
-  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.UseItemPotionMessage)
-  ))
-_sym_db.RegisterMessage(UseItemPotionMessage)
-
-UseItemReviveMessage = _reflection.GeneratedProtocolMessageType('UseItemReviveMessage', (_message.Message,), dict(
-  DESCRIPTOR = _USEITEMREVIVEMESSAGE,
-  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.UseItemReviveMessage)
-  ))
-_sym_db.RegisterMessage(UseItemReviveMessage)
-
-UseItemXpBoostMessage = _reflection.GeneratedProtocolMessageType('UseItemXpBoostMessage', (_message.Message,), dict(
-  DESCRIPTOR = _USEITEMXPBOOSTMESSAGE,
-  __module__ = 'POGOProtos.Networking.Requests.Messages_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Networking.Requests.Messages.UseItemXpBoostMessage)
-  ))
-_sym_db.RegisterMessage(UseItemXpBoostMessage)
+_sym_db.RegisterMessage(GetAssetDigestMessage)
 
 
 _GETMAPOBJECTSMESSAGE.fields_by_name['cell_id'].has_options = True

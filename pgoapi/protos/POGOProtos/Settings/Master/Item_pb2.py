@@ -14,10 +14,12 @@ _sym_db = _symbol_database.Default()
 
 
 from POGOProtos import Inventory_pb2 as POGOProtos_dot_Inventory__pb2
+POGOProtos_dot_Inventory_dot_Item__pb2 = POGOProtos_dot_Inventory__pb2.POGOProtos_dot_Inventory_dot_Item__pb2
 POGOProtos_dot_Data__pb2 = POGOProtos_dot_Inventory__pb2.POGOProtos_dot_Data__pb2
 POGOProtos_dot_Enums__pb2 = POGOProtos_dot_Inventory__pb2.POGOProtos_dot_Enums__pb2
 POGOProtos_dot_Data_dot_Player__pb2 = POGOProtos_dot_Inventory__pb2.POGOProtos_dot_Data_dot_Player__pb2
 POGOProtos_dot_Enums__pb2 = POGOProtos_dot_Inventory__pb2.POGOProtos_dot_Enums__pb2
+POGOProtos_dot_Inventory_dot_Item__pb2 = POGOProtos_dot_Inventory__pb2.POGOProtos_dot_Inventory_dot_Item__pb2
 POGOProtos_dot_Data_dot_Player__pb2 = POGOProtos_dot_Inventory__pb2.POGOProtos_dot_Data_dot_Player__pb2
 POGOProtos_dot_Enums__pb2 = POGOProtos_dot_Inventory__pb2.POGOProtos_dot_Enums__pb2
 POGOProtos_dot_Enums__pb2 = POGOProtos_dot_Inventory__pb2.POGOProtos_dot_Enums__pb2
@@ -30,43 +32,12 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='POGOProtos.Settings.Master.Item.proto',
   package='POGOProtos.Settings.Master.Item',
   syntax='proto3',
-  serialized_pb=_b('\n%POGOProtos.Settings.Master.Item.proto\x12\x1fPOGOProtos.Settings.Master.Item\x1a\x1aPOGOProtos.Inventory.proto\x1a\x16POGOProtos.Enums.proto\"\'\n\x10\x42\x61ttleAttributes\x12\x13\n\x0bsta_percent\x18\x01 \x01(\x02\"\x83\x01\n\x16\x45ggIncubatorAttributes\x12>\n\x0eincubator_type\x18\x01 \x01(\x0e\x32&.POGOProtos.Inventory.EggIncubatorType\x12\x0c\n\x04uses\x18\x02 \x01(\x05\x12\x1b\n\x13\x64istance_multiplier\x18\x03 \x01(\x02\"M\n\x19\x45xperienceBoostAttributes\x12\x15\n\rxp_multiplier\x18\x01 \x01(\x02\x12\x19\n\x11\x62oost_duration_ms\x18\x02 \x01(\x05\"x\n\x0e\x46oodAttributes\x12\x31\n\x0bitem_effect\x18\x01 \x03(\x0e\x32\x1c.POGOProtos.Enums.ItemEffect\x12\x1b\n\x13item_effect_percent\x18\x02 \x03(\x02\x12\x16\n\x0egrowth_percent\x18\x03 \x01(\x02\"b\n\x16\x46ortModifierAttributes\x12!\n\x19modifier_lifetime_seconds\x18\x01 \x01(\x05\x12%\n\x1dtroy_disk_num_pokemon_spawned\x18\x02 \x01(\x05\"\xd2\x02\n\x11IncenseAttributes\x12 \n\x18incense_lifetime_seconds\x18\x01 \x01(\x05\x12\x33\n\x0cpokemon_type\x18\x02 \x03(\x0e\x32\x1d.POGOProtos.Enums.PokemonType\x12(\n pokemon_incense_type_probability\x18\x03 \x01(\x02\x12\x30\n(standing_time_between_encounters_seconds\x18\x04 \x01(\x05\x12-\n%moving_time_between_encounter_seconds\x18\x05 \x01(\x05\x12\x35\n-distance_required_for_shorter_interval_meters\x18\x06 \x01(\x05\x12$\n\x1cpokemon_attracted_length_sec\x18\x07 \x01(\x05\"z\n\x1aInventoryUpgradeAttributes\x12\x1a\n\x12\x61\x64\x64itional_storage\x18\x01 \x01(\x05\x12@\n\x0cupgrade_type\x18\x02 \x01(\x0e\x32*.POGOProtos.Inventory.InventoryUpgradeType\"\x95\x01\n\x12PokeballAttributes\x12\x31\n\x0bitem_effect\x18\x01 \x01(\x0e\x32\x1c.POGOProtos.Enums.ItemEffect\x12\x15\n\rcapture_multi\x18\x02 \x01(\x02\x12\x1c\n\x14\x63\x61pture_multi_effect\x18\x03 \x01(\x02\x12\x17\n\x0fitem_effect_mod\x18\x04 \x01(\x02\";\n\x10PotionAttributes\x12\x13\n\x0bsta_percent\x18\x01 \x01(\x02\x12\x12\n\nsta_amount\x18\x02 \x01(\x05\"\'\n\x10ReviveAttributes\x12\x13\n\x0bsta_percent\x18\x01 \x01(\x02P\x00P\x01\x62\x06proto3')
+  serialized_pb=_b('\n%POGOProtos.Settings.Master.Item.proto\x12\x1fPOGOProtos.Settings.Master.Item\x1a\x1aPOGOProtos.Inventory.proto\x1a\x16POGOProtos.Enums.proto\"\x83\x01\n\x16\x45ggIncubatorAttributes\x12>\n\x0eincubator_type\x18\x01 \x01(\x0e\x32&.POGOProtos.Inventory.EggIncubatorType\x12\x0c\n\x04uses\x18\x02 \x01(\x05\x12\x1b\n\x13\x64istance_multiplier\x18\x03 \x01(\x02\";\n\x10PotionAttributes\x12\x13\n\x0bsta_percent\x18\x01 \x01(\x02\x12\x12\n\nsta_amount\x18\x02 \x01(\x05\"b\n\x16\x46ortModifierAttributes\x12!\n\x19modifier_lifetime_seconds\x18\x01 \x01(\x05\x12%\n\x1dtroy_disk_num_pokemon_spawned\x18\x02 \x01(\x05\"\'\n\x10\x42\x61ttleAttributes\x12\x13\n\x0bsta_percent\x18\x01 \x01(\x02\"\'\n\x10ReviveAttributes\x12\x13\n\x0bsta_percent\x18\x01 \x01(\x02\"M\n\x19\x45xperienceBoostAttributes\x12\x15\n\rxp_multiplier\x18\x01 \x01(\x02\x12\x19\n\x11\x62oost_duration_ms\x18\x02 \x01(\x05\"\x95\x01\n\x12PokeballAttributes\x12\x31\n\x0bitem_effect\x18\x01 \x01(\x0e\x32\x1c.POGOProtos.Enums.ItemEffect\x12\x15\n\rcapture_multi\x18\x02 \x01(\x02\x12\x1c\n\x14\x63\x61pture_multi_effect\x18\x03 \x01(\x02\x12\x17\n\x0fitem_effect_mod\x18\x04 \x01(\x02\"x\n\x0e\x46oodAttributes\x12\x31\n\x0bitem_effect\x18\x01 \x03(\x0e\x32\x1c.POGOProtos.Enums.ItemEffect\x12\x1b\n\x13item_effect_percent\x18\x02 \x03(\x02\x12\x16\n\x0egrowth_percent\x18\x03 \x01(\x02\"\xd2\x02\n\x11IncenseAttributes\x12 \n\x18incense_lifetime_seconds\x18\x01 \x01(\x05\x12\x33\n\x0cpokemon_type\x18\x02 \x03(\x0e\x32\x1d.POGOProtos.Enums.PokemonType\x12(\n pokemon_incense_type_probability\x18\x03 \x01(\x02\x12\x30\n(standing_time_between_encounters_seconds\x18\x04 \x01(\x05\x12-\n%moving_time_between_encounter_seconds\x18\x05 \x01(\x05\x12\x35\n-distance_required_for_shorter_interval_meters\x18\x06 \x01(\x05\x12$\n\x1cpokemon_attracted_length_sec\x18\x07 \x01(\x05\"z\n\x1aInventoryUpgradeAttributes\x12\x1a\n\x12\x61\x64\x64itional_storage\x18\x01 \x01(\x05\x12@\n\x0cupgrade_type\x18\x02 \x01(\x0e\x32*.POGOProtos.Inventory.InventoryUpgradeTypeP\x00P\x01\x62\x06proto3')
   ,
   dependencies=[POGOProtos_dot_Inventory__pb2.DESCRIPTOR,POGOProtos_dot_Enums__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
-
-
-_BATTLEATTRIBUTES = _descriptor.Descriptor(
-  name='BattleAttributes',
-  full_name='POGOProtos.Settings.Master.Item.BattleAttributes',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='sta_percent', full_name='POGOProtos.Settings.Master.Item.BattleAttributes.sta_percent', index=0,
-      number=1, type=2, cpp_type=6, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=126,
-  serialized_end=165,
-)
 
 
 _EGGINCUBATORATTRIBUTES = _descriptor.Descriptor(
@@ -109,8 +80,146 @@ _EGGINCUBATORATTRIBUTES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=168,
-  serialized_end=299,
+  serialized_start=127,
+  serialized_end=258,
+)
+
+
+_POTIONATTRIBUTES = _descriptor.Descriptor(
+  name='PotionAttributes',
+  full_name='POGOProtos.Settings.Master.Item.PotionAttributes',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='sta_percent', full_name='POGOProtos.Settings.Master.Item.PotionAttributes.sta_percent', index=0,
+      number=1, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='sta_amount', full_name='POGOProtos.Settings.Master.Item.PotionAttributes.sta_amount', index=1,
+      number=2, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=260,
+  serialized_end=319,
+)
+
+
+_FORTMODIFIERATTRIBUTES = _descriptor.Descriptor(
+  name='FortModifierAttributes',
+  full_name='POGOProtos.Settings.Master.Item.FortModifierAttributes',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='modifier_lifetime_seconds', full_name='POGOProtos.Settings.Master.Item.FortModifierAttributes.modifier_lifetime_seconds', index=0,
+      number=1, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='troy_disk_num_pokemon_spawned', full_name='POGOProtos.Settings.Master.Item.FortModifierAttributes.troy_disk_num_pokemon_spawned', index=1,
+      number=2, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=321,
+  serialized_end=419,
+)
+
+
+_BATTLEATTRIBUTES = _descriptor.Descriptor(
+  name='BattleAttributes',
+  full_name='POGOProtos.Settings.Master.Item.BattleAttributes',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='sta_percent', full_name='POGOProtos.Settings.Master.Item.BattleAttributes.sta_percent', index=0,
+      number=1, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=421,
+  serialized_end=460,
+)
+
+
+_REVIVEATTRIBUTES = _descriptor.Descriptor(
+  name='ReviveAttributes',
+  full_name='POGOProtos.Settings.Master.Item.ReviveAttributes',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='sta_percent', full_name='POGOProtos.Settings.Master.Item.ReviveAttributes.sta_percent', index=0,
+      number=1, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=462,
+  serialized_end=501,
 )
 
 
@@ -147,8 +256,60 @@ _EXPERIENCEBOOSTATTRIBUTES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=301,
-  serialized_end=378,
+  serialized_start=503,
+  serialized_end=580,
+)
+
+
+_POKEBALLATTRIBUTES = _descriptor.Descriptor(
+  name='PokeballAttributes',
+  full_name='POGOProtos.Settings.Master.Item.PokeballAttributes',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='item_effect', full_name='POGOProtos.Settings.Master.Item.PokeballAttributes.item_effect', index=0,
+      number=1, type=14, cpp_type=8, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='capture_multi', full_name='POGOProtos.Settings.Master.Item.PokeballAttributes.capture_multi', index=1,
+      number=2, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='capture_multi_effect', full_name='POGOProtos.Settings.Master.Item.PokeballAttributes.capture_multi_effect', index=2,
+      number=3, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='item_effect_mod', full_name='POGOProtos.Settings.Master.Item.PokeballAttributes.item_effect_mod', index=3,
+      number=4, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=583,
+  serialized_end=732,
 )
 
 
@@ -192,46 +353,8 @@ _FOODATTRIBUTES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=380,
-  serialized_end=500,
-)
-
-
-_FORTMODIFIERATTRIBUTES = _descriptor.Descriptor(
-  name='FortModifierAttributes',
-  full_name='POGOProtos.Settings.Master.Item.FortModifierAttributes',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='modifier_lifetime_seconds', full_name='POGOProtos.Settings.Master.Item.FortModifierAttributes.modifier_lifetime_seconds', index=0,
-      number=1, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='troy_disk_num_pokemon_spawned', full_name='POGOProtos.Settings.Master.Item.FortModifierAttributes.troy_disk_num_pokemon_spawned', index=1,
-      number=2, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=502,
-  serialized_end=600,
+  serialized_start=734,
+  serialized_end=854,
 )
 
 
@@ -303,8 +426,8 @@ _INCENSEATTRIBUTES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=603,
-  serialized_end=941,
+  serialized_start=857,
+  serialized_end=1195,
 )
 
 
@@ -341,153 +464,25 @@ _INVENTORYUPGRADEATTRIBUTES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=943,
-  serialized_end=1065,
-)
-
-
-_POKEBALLATTRIBUTES = _descriptor.Descriptor(
-  name='PokeballAttributes',
-  full_name='POGOProtos.Settings.Master.Item.PokeballAttributes',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='item_effect', full_name='POGOProtos.Settings.Master.Item.PokeballAttributes.item_effect', index=0,
-      number=1, type=14, cpp_type=8, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='capture_multi', full_name='POGOProtos.Settings.Master.Item.PokeballAttributes.capture_multi', index=1,
-      number=2, type=2, cpp_type=6, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='capture_multi_effect', full_name='POGOProtos.Settings.Master.Item.PokeballAttributes.capture_multi_effect', index=2,
-      number=3, type=2, cpp_type=6, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='item_effect_mod', full_name='POGOProtos.Settings.Master.Item.PokeballAttributes.item_effect_mod', index=3,
-      number=4, type=2, cpp_type=6, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=1068,
-  serialized_end=1217,
-)
-
-
-_POTIONATTRIBUTES = _descriptor.Descriptor(
-  name='PotionAttributes',
-  full_name='POGOProtos.Settings.Master.Item.PotionAttributes',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='sta_percent', full_name='POGOProtos.Settings.Master.Item.PotionAttributes.sta_percent', index=0,
-      number=1, type=2, cpp_type=6, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='sta_amount', full_name='POGOProtos.Settings.Master.Item.PotionAttributes.sta_amount', index=1,
-      number=2, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=1219,
-  serialized_end=1278,
-)
-
-
-_REVIVEATTRIBUTES = _descriptor.Descriptor(
-  name='ReviveAttributes',
-  full_name='POGOProtos.Settings.Master.Item.ReviveAttributes',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='sta_percent', full_name='POGOProtos.Settings.Master.Item.ReviveAttributes.sta_percent', index=0,
-      number=1, type=2, cpp_type=6, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=1280,
+  serialized_start=1197,
   serialized_end=1319,
 )
 
 _EGGINCUBATORATTRIBUTES.fields_by_name['incubator_type'].enum_type = POGOProtos_dot_Inventory__pb2._EGGINCUBATORTYPE
+_POKEBALLATTRIBUTES.fields_by_name['item_effect'].enum_type = POGOProtos_dot_Enums__pb2._ITEMEFFECT
 _FOODATTRIBUTES.fields_by_name['item_effect'].enum_type = POGOProtos_dot_Enums__pb2._ITEMEFFECT
 _INCENSEATTRIBUTES.fields_by_name['pokemon_type'].enum_type = POGOProtos_dot_Enums__pb2._POKEMONTYPE
 _INVENTORYUPGRADEATTRIBUTES.fields_by_name['upgrade_type'].enum_type = POGOProtos_dot_Inventory__pb2._INVENTORYUPGRADETYPE
-_POKEBALLATTRIBUTES.fields_by_name['item_effect'].enum_type = POGOProtos_dot_Enums__pb2._ITEMEFFECT
-DESCRIPTOR.message_types_by_name['BattleAttributes'] = _BATTLEATTRIBUTES
 DESCRIPTOR.message_types_by_name['EggIncubatorAttributes'] = _EGGINCUBATORATTRIBUTES
-DESCRIPTOR.message_types_by_name['ExperienceBoostAttributes'] = _EXPERIENCEBOOSTATTRIBUTES
-DESCRIPTOR.message_types_by_name['FoodAttributes'] = _FOODATTRIBUTES
+DESCRIPTOR.message_types_by_name['PotionAttributes'] = _POTIONATTRIBUTES
 DESCRIPTOR.message_types_by_name['FortModifierAttributes'] = _FORTMODIFIERATTRIBUTES
+DESCRIPTOR.message_types_by_name['BattleAttributes'] = _BATTLEATTRIBUTES
+DESCRIPTOR.message_types_by_name['ReviveAttributes'] = _REVIVEATTRIBUTES
+DESCRIPTOR.message_types_by_name['ExperienceBoostAttributes'] = _EXPERIENCEBOOSTATTRIBUTES
+DESCRIPTOR.message_types_by_name['PokeballAttributes'] = _POKEBALLATTRIBUTES
+DESCRIPTOR.message_types_by_name['FoodAttributes'] = _FOODATTRIBUTES
 DESCRIPTOR.message_types_by_name['IncenseAttributes'] = _INCENSEATTRIBUTES
 DESCRIPTOR.message_types_by_name['InventoryUpgradeAttributes'] = _INVENTORYUPGRADEATTRIBUTES
-DESCRIPTOR.message_types_by_name['PokeballAttributes'] = _POKEBALLATTRIBUTES
-DESCRIPTOR.message_types_by_name['PotionAttributes'] = _POTIONATTRIBUTES
-DESCRIPTOR.message_types_by_name['ReviveAttributes'] = _REVIVEATTRIBUTES
-
-BattleAttributes = _reflection.GeneratedProtocolMessageType('BattleAttributes', (_message.Message,), dict(
-  DESCRIPTOR = _BATTLEATTRIBUTES,
-  __module__ = 'POGOProtos.Settings.Master.Item_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Settings.Master.Item.BattleAttributes)
-  ))
-_sym_db.RegisterMessage(BattleAttributes)
 
 EggIncubatorAttributes = _reflection.GeneratedProtocolMessageType('EggIncubatorAttributes', (_message.Message,), dict(
   DESCRIPTOR = _EGGINCUBATORATTRIBUTES,
@@ -496,19 +491,12 @@ EggIncubatorAttributes = _reflection.GeneratedProtocolMessageType('EggIncubatorA
   ))
 _sym_db.RegisterMessage(EggIncubatorAttributes)
 
-ExperienceBoostAttributes = _reflection.GeneratedProtocolMessageType('ExperienceBoostAttributes', (_message.Message,), dict(
-  DESCRIPTOR = _EXPERIENCEBOOSTATTRIBUTES,
+PotionAttributes = _reflection.GeneratedProtocolMessageType('PotionAttributes', (_message.Message,), dict(
+  DESCRIPTOR = _POTIONATTRIBUTES,
   __module__ = 'POGOProtos.Settings.Master.Item_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Settings.Master.Item.ExperienceBoostAttributes)
+  # @@protoc_insertion_point(class_scope:POGOProtos.Settings.Master.Item.PotionAttributes)
   ))
-_sym_db.RegisterMessage(ExperienceBoostAttributes)
-
-FoodAttributes = _reflection.GeneratedProtocolMessageType('FoodAttributes', (_message.Message,), dict(
-  DESCRIPTOR = _FOODATTRIBUTES,
-  __module__ = 'POGOProtos.Settings.Master.Item_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Settings.Master.Item.FoodAttributes)
-  ))
-_sym_db.RegisterMessage(FoodAttributes)
+_sym_db.RegisterMessage(PotionAttributes)
 
 FortModifierAttributes = _reflection.GeneratedProtocolMessageType('FortModifierAttributes', (_message.Message,), dict(
   DESCRIPTOR = _FORTMODIFIERATTRIBUTES,
@@ -516,6 +504,41 @@ FortModifierAttributes = _reflection.GeneratedProtocolMessageType('FortModifierA
   # @@protoc_insertion_point(class_scope:POGOProtos.Settings.Master.Item.FortModifierAttributes)
   ))
 _sym_db.RegisterMessage(FortModifierAttributes)
+
+BattleAttributes = _reflection.GeneratedProtocolMessageType('BattleAttributes', (_message.Message,), dict(
+  DESCRIPTOR = _BATTLEATTRIBUTES,
+  __module__ = 'POGOProtos.Settings.Master.Item_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Settings.Master.Item.BattleAttributes)
+  ))
+_sym_db.RegisterMessage(BattleAttributes)
+
+ReviveAttributes = _reflection.GeneratedProtocolMessageType('ReviveAttributes', (_message.Message,), dict(
+  DESCRIPTOR = _REVIVEATTRIBUTES,
+  __module__ = 'POGOProtos.Settings.Master.Item_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Settings.Master.Item.ReviveAttributes)
+  ))
+_sym_db.RegisterMessage(ReviveAttributes)
+
+ExperienceBoostAttributes = _reflection.GeneratedProtocolMessageType('ExperienceBoostAttributes', (_message.Message,), dict(
+  DESCRIPTOR = _EXPERIENCEBOOSTATTRIBUTES,
+  __module__ = 'POGOProtos.Settings.Master.Item_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Settings.Master.Item.ExperienceBoostAttributes)
+  ))
+_sym_db.RegisterMessage(ExperienceBoostAttributes)
+
+PokeballAttributes = _reflection.GeneratedProtocolMessageType('PokeballAttributes', (_message.Message,), dict(
+  DESCRIPTOR = _POKEBALLATTRIBUTES,
+  __module__ = 'POGOProtos.Settings.Master.Item_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Settings.Master.Item.PokeballAttributes)
+  ))
+_sym_db.RegisterMessage(PokeballAttributes)
+
+FoodAttributes = _reflection.GeneratedProtocolMessageType('FoodAttributes', (_message.Message,), dict(
+  DESCRIPTOR = _FOODATTRIBUTES,
+  __module__ = 'POGOProtos.Settings.Master.Item_pb2'
+  # @@protoc_insertion_point(class_scope:POGOProtos.Settings.Master.Item.FoodAttributes)
+  ))
+_sym_db.RegisterMessage(FoodAttributes)
 
 IncenseAttributes = _reflection.GeneratedProtocolMessageType('IncenseAttributes', (_message.Message,), dict(
   DESCRIPTOR = _INCENSEATTRIBUTES,
@@ -530,27 +553,6 @@ InventoryUpgradeAttributes = _reflection.GeneratedProtocolMessageType('Inventory
   # @@protoc_insertion_point(class_scope:POGOProtos.Settings.Master.Item.InventoryUpgradeAttributes)
   ))
 _sym_db.RegisterMessage(InventoryUpgradeAttributes)
-
-PokeballAttributes = _reflection.GeneratedProtocolMessageType('PokeballAttributes', (_message.Message,), dict(
-  DESCRIPTOR = _POKEBALLATTRIBUTES,
-  __module__ = 'POGOProtos.Settings.Master.Item_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Settings.Master.Item.PokeballAttributes)
-  ))
-_sym_db.RegisterMessage(PokeballAttributes)
-
-PotionAttributes = _reflection.GeneratedProtocolMessageType('PotionAttributes', (_message.Message,), dict(
-  DESCRIPTOR = _POTIONATTRIBUTES,
-  __module__ = 'POGOProtos.Settings.Master.Item_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Settings.Master.Item.PotionAttributes)
-  ))
-_sym_db.RegisterMessage(PotionAttributes)
-
-ReviveAttributes = _reflection.GeneratedProtocolMessageType('ReviveAttributes', (_message.Message,), dict(
-  DESCRIPTOR = _REVIVEATTRIBUTES,
-  __module__ = 'POGOProtos.Settings.Master.Item_pb2'
-  # @@protoc_insertion_point(class_scope:POGOProtos.Settings.Master.Item.ReviveAttributes)
-  ))
-_sym_db.RegisterMessage(ReviveAttributes)
 
 
 # @@protoc_insertion_point(module_scope)
